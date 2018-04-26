@@ -19,15 +19,15 @@ function start()
 ....................
 ....................
 ....................
-....................
-....................
-....................
+.......oooooo.......
+.......oooooo.......
+.......oooooo.......
 oooooooooooooooooooo
 ]])
 
-  Spawn("crystal", 10, 8)
-  Spawn("player", 4, 12)
-  Global("chest", 16, 9, "block_room")
+  Spawn("crystal", 10, 5)
+  Spawn("player", 5, 12)
+  Global("chest", 15, 12, "block_room")
 end
 
 function block_room()
@@ -42,17 +42,17 @@ function block_room()
 ....................
 ....................
 ....................
+....................
 ........ooooo.......
-............o.......
 ............o.......
 ............o.......
 oooooooooooooooooooo
 ]])
 
-  Global("chest", 16, 9, "key_room")
-  Spawn("player", 4, 12)
-  Spawn("lock", 8, 12)
-  Spawn("box", 10, 12)
+  Global("chest", 15, 12, "key_room")
+  Spawn("player", 5, 12)
+  Spawn("lock", 7.5, 12.5)
+  Spawn("box", 10, 13)
 end
 
 function key_room()
@@ -74,11 +74,11 @@ function key_room()
 oooooooooooooooooooo
 ]])
 
-  Global("chest", 16, 9, "start")
-  Spawn("player", 4, 12)
+  Global("chest", 15, 12, "start")
+  Spawn("player", 5, 12)
   -- Spawn("yield", 18, 8)
   -- Spawn("yield", 2, 5)
-  Spawn("key", 16, 10)
+  Spawn("key", 10, 12)
 end
 
 tiles = "tiles/city"
