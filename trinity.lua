@@ -105,6 +105,32 @@ oooooooooooooooooooo
   Spawn("player", 10, 12)
 end
 
+function reject()
+  ApplyTiles(metal, 0, 0, [[
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|ooooooooooooooo...|
+|..................|
+|..................|
+|..................|
+oooooooooooooooooooo
+]])
+
+  Spawn("diamond", 3, 2)
+  Spawn("player", 3, 12)
+  Spawn("lock", 5.5, 12.5)
+  Spawn("lock", 10.5, 12.5)
+  Spawn("lock", 15.5, 12.5)
+end
+
 
 tiles = "tiles/city"
 pattern = "backgrounds/tubes"
