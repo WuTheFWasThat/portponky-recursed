@@ -25,10 +25,9 @@ function start()
 oooooooooooooooooooo
 ]])
 
-  Spawn("crystal", 10, 5)
+  Spawn("crystal", 10, 6)
   Spawn("player", 10, 9)
   Global("chest", 15, 12, "block_room")
-  Spawn("chest", 5, 12, "empty_room")
 end
 
 function block_room()
@@ -51,7 +50,6 @@ oooooooooooooooooooo
 ]])
 
   Global("chest", 15, 12, "key_room")
-  Spawn("chest", 5, 12, "empty_room")
   Spawn("player", 10, 9)
   Spawn("lock", 7.5, 12.5)
   Spawn("box", 10, 13)
@@ -81,28 +79,6 @@ oooooooooooooooooooo
   -- Spawn("yield", 18, 8)
   -- Spawn("yield", 2, 5)
   Spawn("key", 5, 12)
-end
-
-function empty_room()
-  ApplyTiles(metal, 0, 0, [[
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-oooooooooooooooooooo
-]])
-
-  Spawn("player", 10, 12)
 end
 
 
