@@ -117,18 +117,19 @@ function reject()
 |..................|
 |..................|
 |..................|
-|ooooooooooooooo...|
+|....ooooooooooo...|
 |..................|
 |..................|
 |..................|
 oooooooooooooooooooo
 ]])
 
-  Spawn("diamond", 3, 2)
+  Spawn("diamond", 10, 4)
   Spawn("player", 3, 12)
   Spawn("lock", 5.5, 12.5)
   Spawn("lock", 10.5, 12.5)
   Spawn("lock", 15.5, 12.5)
+  Global("chest", 18, 12, "reject")
 end
 
 
