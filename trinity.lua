@@ -141,27 +141,34 @@ light = { 0.24, 0.07, 0.10 }
  --[[
 ==== solution ===
 - go in right chest to block room
-  - go in right chest to key room
-    - bring out crystal room
-  - bring key room into crystal room
-    - bring key room into crystal room
-      - bring key room into block room
-        - get block
-        - bring empty room to other side, put crystal room in it
-        ===== for regular crystal
-        - exit, come back in
-        - bring crystal room out
-          - bring empty room into crystal room
-          - go down, put block room into it
-            - go in block room
-              - bring empty room into crystal room
-              - bring block room out
-                - go into block room, get block, go into crystal room (1st block)
-                - REPEAT trick:
-                - go into block room, get block
-                - go into crystal room, drop off block
-                - go into block room, get block, bring crystal room above ledge
-                - exit, take block,  exit
+- go in right chest to key room
+- bring out crystal room
+- bring key room into crystal room
+- bring key room into crystal room
+- bring key room into block room
+- get block
+- bring empty room to other side, put crystal room in it
+- exit, come back in
+- bring crystal room out of empty
+- bring empty room into crystal room
+- go down, put block room into it
+- go in block room
+===== for regular crystal
+- bring empty room into crystal room
+- bring block room out
+- go into block room, get block, go into crystal room (1st block)
+- REPEAT trick:
+- go into block room, get block
+- go into crystal room, drop off block
+- go into block room, get block, bring crystal room above ledge
+- exit, take block,  exit
+==== for paradox ===
+- get block, bring empty room up
+- put key room in empty room
+- go in empty room
+ - go in block room
+ - go in empty room
+ - put block room in key room
+ - exit, exit -- OOPS! NEEDS MORE WORK
 
-==== paradox ===
 -- ]]
