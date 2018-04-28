@@ -29,6 +29,8 @@ oooooooooooooooooooo
   Spawn("player", 10, 9)
   Global("chest", 15, 12, "block_room")
   Spawn("record", 5, 12, "sounds/voices/w1")
+
+  Spawn("chest", 12, 9, "reject")
 end
 
 function block_room()
@@ -76,11 +78,11 @@ function key_room()
 oooooooooooooooooooo
 ]])
 
-  Global("chest", 13, 12, "start")
+  Global("chest", 13, 13, "start")
   Spawn("player", 10, 12)
   -- Spawn("yield", 18, 8)
   -- Spawn("yield", 2, 5)
-  Spawn("key", 7, 12)
+  Spawn("key", 7, 13)
 end
 
 function empty_room()
@@ -105,7 +107,7 @@ oooooooooooooooooooo
   Spawn("player", 10, 10)
 end
 
-function reject()
+function oldreject()
   ApplyTiles(metal, 0, 0, [[
 |..................|
 |..................|
@@ -129,6 +131,109 @@ oooooooooooooooooooo
   Spawn("lock", 7.5, 12.5)
   Spawn("lock", 12.5, 12.5)
   Spawn("chest", 15, 12, "reject")
+end
+
+function reject()
+  ApplyTiles(metal, 0, 0, [[
+|oooooooooooooooooo|
+|..................|
+|..................|
+|..................|
+|..................|
+|oooooo------oooooo|
+|oooooo......oooooo|
+|oooooo......oooooo|
+|oooooo------oooooo|
+|oooooo......oooooo|
+|oooooo......oooooo|
+|oooooo------oooooo|
+|oooooo......oooooo|
+|oooooo......oooooo|
+|oooooo------oooooo|
+]])
+
+  -- Spawn("fan", 4, 4)
+  Spawn("player", 10, 12)
+  Spawn("chest", 16, 4, "reject_diamond_room")
+end
+
+
+function reject_diamond_room()
+  ApplyTiles(metal, 0, 0, [[
+|oooooo......oooooo|
+|oooooo......oooooo|
+|oooooo......oooooo|
+|oooooo......oooooo|
+|..................|
+|..................|
+|..................|
+|.oooooooooooooooo.|
+|..................|
+|..................|
+|..................|
+|oooooo......oooooo|
+|oooooo......oooooo|
+|oooooo......oooooo|
+|oooooooooooooooooo|
+]])
+
+  Spawn("diamond", 10, 1)
+  Spawn("player", 10, 12)
+  Spawn("lock", 6.5, 5.5)
+  Spawn("lock", 13.5, 5.5)
+  Global("chest", 16, 10, "reject_fan_room")
+end
+
+function reject_key_room()
+  ApplyTiles(metal, 0, 0, [[
+|oooooooooooooooooo|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|...oooooooooooo...|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|oooooooooooooooooo|
+]])
+
+  Global("chest", 16, 12, "reject_diamond_room")
+  Spawn("player", 10, 6)
+  -- Spawn("yield", 18, 8)
+  -- Spawn("yield", 2, 5)
+  Spawn("key", 10, 12)
+  Global("fan", 4, 12)
+end
+
+function reject_fan_room()
+  ApplyTiles(metal, 0, 0, [[
+|------------------|
+|..................|
+|..................|
+|..................|
+|..................|
+|.oooooooooooooooo.|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|oooooo------oooooo|
+|oooooo......oooooo|
+|oooooo......oooooo|
+|oooooo------oooooo|
+]])
+
+  Spawn("yield", 4, 10) -- 6
+  Spawn("fan", 10, 4)
+  Spawn("player", 10, 12)
+  Global("chest", 16, 10, "reject_key_room")
 end
 
 
@@ -163,12 +268,21 @@ light = { 0.24, 0.07, 0.10 }
 - go into block room, get block, bring crystal room above ledge
 - exit, take block,  exit
 ==== for paradox ===
-- get block, bring empty room up
-- put key room in empty room
-- go in empty room
- - go in block room
- - go in empty room
- - put block room in key room
- - exit, exit -- OOPS! NEEDS MORE WORK
+ - take key room down, take empty room into it
+ - go into empty room, then block room
+ - get block, put key room into empty room (gem room too, if you want)
+ - take empty room out x3 until in paradox zone
+
+
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  |
+  ---------------------
+lock | fan
 
 -- ]]
