@@ -1,13 +1,16 @@
-local metal = { ["7"] = "panel_ul", ["8"] = "panel_u", ["9"] = "panel_ur",
-                ["4"] = "panel_l",  ["5"] = "panel_c", ["6"] = "panel_r",
-                ["1"] = "panel_dl", ["2"] = "panel_d", ["3"] = "panel_dr",
-                ["<"] = "panel_fs", [">"] = "panel_bs",
-                E = "panel_k1", F = "panel_k2", B = "panel_k3",
-                o = "block", ["="] = "girder_h", ["|"] = "girder_v",
-                w = "warning", [":"] = "back", ["'"] = "back_d", ["-"] = "ledge" }
+local villa = { o = "stone", t = "stonetop", ["8"] = "stucco",
+                ["7"] = "arch_l", ["9"] = "arch_r", ["1"] = "stonebottom_l", ["3"] = "stonebottom_r",
+                ["|"] = "pillar",  ["T"] = "pillartop", ["/"] = "grasspillar",
+                [">"] = "shadowtop_l", ["}"] = "shadow_l", ["<"] = "shadowtop_r", ["{"] = "shadow_r",
+                ["x"] = "ivy_a", ["X"] = "ivy_b", ["+"] = "ivy_c",
+                ["$"] = "hang_a", ["%"] = "hang_b", ["&"] = "hang_c",
+                ["#"] = "bush_a", ["@"] = "bush_a",
+                [","] = "grass_a", [":"] = "grass_b", [";"] = "grass_c",
+                ["-"] = "ledge" }
+
 
 function start()
-  ApplyTiles(metal, 0, 0, [[
+  ApplyTiles(villa, 0, 0, [[
 |..................|
 |..................|
 |..................|
@@ -34,7 +37,7 @@ oooooooooooooooooooo
 end
 
 function block_room()
-    ApplyTiles(metal, 0, 0, [[
+    ApplyTiles(villa, 0, 0, [[
 |..................|
 |..................|
 |..................|
@@ -60,7 +63,7 @@ oooooooooooooooooooo
 end
 
 function key_room()
-  ApplyTiles(metal, 0, 0, [[
+  ApplyTiles(villa, 0, 0, [[
 |..................|
 |..................|
 |..................|
@@ -86,7 +89,7 @@ oooooooooooooooooooo
 end
 
 function empty_room()
-  ApplyTiles(metal, 0, 0, [[
+  ApplyTiles(villa, 0, 0, [[
 oooooooooooooooooooo
 oooooooooooooooooooo
 oooooooooooooooooooo
@@ -108,7 +111,7 @@ oooooooooooooooooooo
 end
 
 function oldreject()
-  ApplyTiles(metal, 0, 0, [[
+  ApplyTiles(villa, 0, 0, [[
 |..................|
 |..................|
 |..................|
@@ -134,7 +137,7 @@ oooooooooooooooooooo
 end
 
 function reject()
-  ApplyTiles(metal, 0, 0, [[
+  ApplyTiles(villa, 0, 0, [[
 |oooooooooooooooooo|
 |..................|
 |..................|
@@ -159,7 +162,7 @@ end
 
 
 function reject_diamond_room()
-  ApplyTiles(metal, 0, 0, [[
+  ApplyTiles(villa, 0, 0, [[
 |oooooo......oooooo|
 |oooooo......oooooo|
 |oooooo......oooooo|
@@ -185,7 +188,7 @@ function reject_diamond_room()
 end
 
 function reject_key_room()
-  ApplyTiles(metal, 0, 0, [[
+  ApplyTiles(villa, 0, 0, [[
 |oooooooooooooooooo|
 |..................|
 |..................|
@@ -212,7 +215,7 @@ function reject_key_room()
 end
 
 function reject_fan_room()
-  ApplyTiles(metal, 0, 0, [[
+  ApplyTiles(villa, 0, 0, [[
 |------------------|
 |..................|
 |..................|
@@ -237,10 +240,10 @@ function reject_fan_room()
 end
 
 
-tiles = "tiles/city"
-pattern = "backgrounds/tubes"
-dark = { 0.1, 0.02, 0.04 }
-light = { 0.24, 0.07, 0.10 }
+tiles = "tiles/villa"
+pattern = "backgrounds/growth"
+dark = { start = {0.14, 0.10, 0.12}, reject = {0.26, 0.19, 0.23} }
+light = { start = {0.26, 0.19, 0.23}, reject = {0.4, 0.29, 0.35} }
 
 
  --[[

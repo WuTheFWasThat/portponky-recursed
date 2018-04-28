@@ -5,17 +5,8 @@ This file goes in a location like
 
 ## ideas
 
-have a->b->c, all green.  need to make it a->c->b
+for paradox room:
+  have to lose track of green room
+  then make paradox again to get back into it
 
-in A
-  go into B
-    take C out
-  take B into C
-    take A into B
-
-
-A has gem, slightly too high
-B has big drop, then block
-C has key
-
-
+  need green fan
