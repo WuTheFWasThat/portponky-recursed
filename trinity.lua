@@ -33,7 +33,7 @@ oooooooooooooooooooo
   Global("chest", 15, 12, "block_room")
   Spawn("record", 5, 12, "sounds/voices/w1")
 
-  Spawn("chest", 12, 9, "reject")
+  -- Spawn("chest", 12, 9, "reject")
 end
 
 function block_room()
@@ -163,7 +163,7 @@ end
 
 function reject_diamond_room()
   ApplyTiles(villa, 0, 0, [[
-|oooooo......oooooo|
+|oooooooooooooooooo|
 |oooooo......oooooo|
 |oooooo......oooooo|
 |oooooo......oooooo|
@@ -180,11 +180,41 @@ function reject_diamond_room()
 |oooooooooooooooooo|
 ]])
 
-  Spawn("diamond", 10, 1)
+  -- NOTE: is this even possible?
+  -- Spawn("diamond", 10, 1)
+  Spawn("diamond", 10, 2.5)
   Spawn("player", 10, 12)
+  Spawn("lock", 5, 5.5)
   Spawn("lock", 6.5, 5.5)
   Spawn("lock", 13.5, 5.5)
+  Spawn("lock", 15, 5.5)
   Global("chest", 16, 10, "reject_fan_room")
+end
+
+function reject_fan_room()
+  ApplyTiles(villa, 0, 0, [[
+|oooooooooooooooooo|
+|.....oooooooo.....|
+|..................|
+|..................|
+|..................|
+|.....oooooooo.....|
+|.oooooooooooooooo.|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|oooooooooooooooooo|
+]])
+
+  Spawn("lock", 6.5, 3.5)
+  Spawn("lock", 13.5, 3.5)
+  Spawn("fan", 10, 4)
+  Spawn("player", 10, 13)
+  Global("chest", 16, 13, "reject_key_room")
 end
 
 function reject_key_room()
@@ -196,7 +226,7 @@ function reject_key_room()
 |..................|
 |..................|
 |..................|
-|...oooooooooooo...|
+|.....oooooooo.....|
 |..................|
 |..................|
 |..................|
@@ -206,37 +236,12 @@ function reject_key_room()
 |oooooooooooooooooo|
 ]])
 
-  Global("chest", 16, 12, "reject_diamond_room")
+  Global("chest", 15, 12, "reject_diamond_room")
   Spawn("player", 10, 6)
   -- Spawn("yield", 18, 8)
   -- Spawn("yield", 2, 5)
   Spawn("key", 10, 12)
-  Global("fan", 4, 12)
-end
-
-function reject_fan_room()
-  ApplyTiles(villa, 0, 0, [[
-|------------------|
-|..................|
-|..................|
-|..................|
-|..................|
-|.oooooooooooooooo.|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|oooooo------oooooo|
-|oooooo......oooooo|
-|oooooo......oooooo|
-|oooooo------oooooo|
-]])
-
-  Spawn("yield", 4, 10) -- 6
-  Spawn("fan", 10, 4)
-  Spawn("player", 10, 12)
-  Global("chest", 16, 10, "reject_key_room")
+  Global("fan", 5, 12)
 end
 
 
@@ -244,48 +249,3 @@ tiles = "tiles/villa"
 pattern = "backgrounds/growth"
 dark = { start = {0.14, 0.10, 0.12}, reject = {0.26, 0.19, 0.23} }
 light = { start = {0.26, 0.19, 0.23}, reject = {0.4, 0.29, 0.35} }
-
-
- --[[
-==== solution ===
-- go in right chest to block room
-- go in right chest to key room
-- bring out crystal room
-- bring key room into crystal room
-- bring key room into crystal room
-- bring key room into block room
-- get block
-- bring empty room to other side, put crystal room in it
-- exit, come back in
-- bring crystal room out of empty
-- bring empty room into crystal room
-- go down, put block room into it
-- go in block room
-===== for regular crystal
-- bring empty room into crystal room
-- bring block room out
-- go into block room, get block, go into crystal room (1st block)
-- REPEAT trick:
-- go into block room, get block
-- go into crystal room, drop off block
-- go into block room, get block, bring crystal room above ledge
-- exit, take block,  exit
-==== for paradox ===
- - take key room down, take empty room into it
- - go into empty room, then block room
- - get block, put key room into empty room (gem room too, if you want)
- - take empty room out x3 until in paradox zone
-
-
-  |
-  |
-  |
-  |
-  |
-  |
-  |
-  |
-  ---------------------
-lock | fan
-
--- ]]

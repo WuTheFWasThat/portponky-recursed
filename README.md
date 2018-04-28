@@ -9,4 +9,9 @@ for paradox room:
   have to lose track of green room
   then make paradox again to get back into it
 
-  need green fan
+
+for fan room:
+  go up.. stuck
+  use key
+  go in room to take out
+  to get out, must go down other side..

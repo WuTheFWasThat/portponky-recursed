@@ -1,0 +1,47 @@
+==== solution ===
+- go in right chest to block room
+- go in right chest to key room
+- bring out crystal room
+- bring key room into crystal room
+- bring key room into crystal room
+- bring key room into block room
+- get block
+- bring empty room to other side, put crystal room in it
+- exit, come back in
+- bring crystal room out of empty
+- bring empty room into crystal room
+- go down, put block room into it
+- go in block room
+===== for regular crystal
+- bring empty room into crystal room
+- bring block room out
+- go into block room, get block, go into crystal room (1st block)
+- REPEAT trick:
+- go into block room, get block
+- go into crystal room, drop off block
+- go into block room, get block, bring crystal room above ledge
+- exit, take block,  exit
+
+==== paradox solution ===
+ - go in, x5, take chest out, back up x2
+ - in paradox zone.
+ - go until green fan room, take green fan into diamond room
+ - take fan room down, go in with green fan, throw to right
+ - go back out twice, take key, go in, in
+ - take key and chest up
+ - open lock, take fan into room, take down, leave it
+ - go in room, in room, take green fan out, out
+ - take green fan up to ledge, leave it.  same with room.
+ - lastly, get key, leave room, throw down
+ - back in room, get room, exit, throw down
+ - back in room, get fan, exit, leave
+ - throw room down, bring gfan down
+ - bring green fan into diamond room, exit
+ - bring key room into diamond room, throw to right, exit
+ - bring key into diamond room, throw to right
+ - go into fan room, bring out diamond room, throw to right
+ - go to right ledge, go in diamond room, get fan
+ - drop fan, bring diamond room up
+ - go in diamond room, bring fan out, drop down, leave fan, bring key up
+ - same, bring key room
+ - same, bring fan again, go in key room, get key
