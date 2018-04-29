@@ -1,0 +1,9 @@
+take room up, take block in
+put block on ledge, drop block on block, put room over that, go in
+exit
+hold block, step onto ledge
+throw all 3 items left
+drop room down
+bring block out
+
+

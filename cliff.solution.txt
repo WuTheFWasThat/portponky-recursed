@@ -1,0 +1,13 @@
+bring block into room1
+block into  room2, exit
+key into room 2, get block
+move green block left of lock, bring out block
+bring green block out
+throw room2 above ledge, using 2 blocks, exit with room2
+come back with room2
+
+again, green block in, key in, get block
+go in r2, throw green block down, bring key out
+take r2 into r2, go down, put block inside to put on top, exit, exit with block
+2 blocks on right, throw key to entrance
+2 blocks on left, exit with key
