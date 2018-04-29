@@ -45,3 +45,11 @@
  - go in diamond room, bring fan out, drop down, leave fan, bring key up
  - same, bring key room
  - same, bring fan again, go in key room, get key
+
+diamond -> empty -> key ledge -> diamond
+
+key ledge
+  empty
+    diamond
+      key ledge
+        diamond

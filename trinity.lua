@@ -33,7 +33,7 @@ oooooooooooooooooooo
   Global("chest", 15, 12, "block_room")
   Spawn("record", 5, 12, "sounds/voices/w1")
 
-  -- Spawn("chest", 12, 9, "reject")
+  Spawn("chest", 12, 9, "reject")
 end
 
 function block_room()
