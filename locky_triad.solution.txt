@@ -1,0 +1,42 @@
+room 1 = oobleck
+room 2 = key/block
+
+take out oob from 1
+grab room 2
+make copy of 1
+bring 1 into 2
+get 3 oobs, grab block, get key
+bring into 1
+unlock,
+bring out to entrance
+exit, copy room 1, bring back in
+
+// at this point you can easily make paradox (see below)
+
+repeatedly:
+  copy room 1
+  bring into room 2
+    get 3 oobs from room 1
+    touch block
+    get key
+    exit
+
+// paradox
+    creation:
+      exit to top level, bring room 1 into room 1
+      take room 1 into room 2, then into room 1
+    solve:
+
+      go in room, take key out, go back in, unlock x2, jar
+      go in room, take key out, go in jar, move fan to entrance
+
+      exit
+
+      go in room, take key out, go back in, unlock x2, jar
+      go in room, hold fan, make jar
+      bring first jar into second
+      bring jar up, bring key up and into jar
+      unlock, move fan to end, exit
+      grab fan, exit
+
+      get fan back... hopefully you know how by now  :)

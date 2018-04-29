@@ -4,7 +4,7 @@ bring star room into jar, then into water room
   then into star room
 put water room in star room at top, exit
 make jar, drop it
-go into star room, take out water room
+go into star room, take out water room      // at this point you can make paradox
 take jar into water room, leave up top
 take star room into water room, leave top
 do trick to get water room above
@@ -12,9 +12,28 @@ exit with star room
 put star room in water, put water room inside it, exit
 take jar into star room, then into water room
 go in jar, go in star room
-exit with water room, drop it
-take star room into star room
+exit with star room,
+take star room into water room, then into star room
 put water room in star room, at top, exit
 make jar,drop  it, exit
 throw room right, exit
 exit
+
+
+// paradox
+go in key room, in d room
+take out fan, drop
+take d room out
+put k room in d
+go in k room, bring out d room
+go in k room
+put fan in d room, exit, exit
+bring fan in k room.  exit
+bring d room in k room, bring up to ledge
+put fan in d room (lower), bring out from upper
+bring out key
+
+.. repeat
+
+
+why are there 2 keys in the key room?

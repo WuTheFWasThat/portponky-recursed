@@ -1,0 +1,4 @@
+unlock cell 1, put chest at where lock was
+jump in
+unlock cell 2, put in aqua
+go in, take block out

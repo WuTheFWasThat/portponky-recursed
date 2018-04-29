@@ -1,0 +1,25 @@
+throw chest down, take block, jump in, drop, exit
+bring key in, make jar
+bring room into jar
+drop, go into room, make jar
+throw room across, bring jar down
+bring key into jar, throw accross
+
+jump across, into room, take block out
+unlock, bring room up
+throw block down, jump in room
+bring block out
+
+
+=== paradox
+
+trigger:
+  throw chest down, take block, jump in, drop, exit
+  bring key in, make jar
+  bring room into jar, and down
+  bring key into room
+  go in room, make jar, bring key in, throw across
+  go in room, make jar, bring room in, throw across, exit
+  go in room, bring out block, unlock, put room where lock was
+  exit a bunch... bring block with!
+

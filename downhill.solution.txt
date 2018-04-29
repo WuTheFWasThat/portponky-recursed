@@ -1,0 +1,15 @@
+bring k-room into b-room
+in water, make jar
+in water, make jar
+throw 2 jars and k-room down, make jar
+bring b room into jar
+go in b room, make jar
+
+bring b room into k jar, go in b room
+take block out, then out, into key room
+move key left, bring block back left, make jar
+go into old k jar, move key out
+
+bring b room jar into new k jar
+drop, bring block into b room jar
+

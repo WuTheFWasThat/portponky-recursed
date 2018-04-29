@@ -1,0 +1,10 @@
+take key in r1
+take r2 out
+take r1 into r2
+go down, take key into r1
+take r2 out, into water
+go in r2, take key out, unlock
+take r3 into r2, put above
+unlock another r3, take into r3 (above)
+take block into r3
+use clutch trick to get 2nd block

@@ -1,0 +1,16 @@
+bring gem room to oobleck room
+get key from gem room
+unlock, put green gem room in non-green one
+exit, take g room out, take o room in it
+bring key in o room, unlock, make jar
+bring jar in o room.  go in jar, get key, exit, unlock and bring jar out
+put g room in o room, up high
+bring o room into jar
+go in o room, get key from g room
+unlock, put green g room in non-green one
+go in g room
+take key, throw to unlock
+jump in  green g room
+throw key to unlock again
+throw green room up
+exit
