@@ -3,7 +3,19 @@ put block on ledge, drop block on block, put room over that, go in
 exit
 hold block, step onto ledge
 throw all 3 items left
-drop room down
+drop both blocks down
+
+go into room
+take room up to other block
+take block into room
+leave block at edge, stack, go into room and exit
+throw all 3 items left
+take a block out
+
+take block into room
+leave at ledge
+use clutch trick to get room above
+jump up, leave room at door
 bring block out
-
-
+throw room down
+bring block out

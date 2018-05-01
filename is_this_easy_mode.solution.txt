@@ -1,0 +1,55 @@
+
+hold box, jump up
+throw green room down, jump in w/ block
+use 3 blocks to bring room up, make jar
+bring block into jar
+
+== diamond
+
+hold box, jump up
+throw green room down, jump in w/ block
+use 2 blocks to go up, make jar
+bring jar into room
+get block (
+   jump in room
+   grab block
+   jump in room with block, leave on left
+   get above block, put carefully on left
+   bring room up
+   bring 3rd block up, out
+   out again, jump and throw down
+   throw room down too
+   put both blocks such that you can exit
+  )
+get non-green copy of room (
+    go in room
+    hold green room
+    redo get block
+    exit with non-green room
+    )
+jump in jar, exit
+jump in jar with green room
+drop it in invalid zone
+exit
+take non-green room
+exit
+
+drop room
+go in room, hold block, make jar
+go in room with jar
+go in jar, exit
+go in jar, take out green room
+exit
+
+take key into non-green room
+key into green room
+jump in green room
+jump in green room again, make jar
+do get_block
+jump in jar, exit
+bring second jar out
+do get_block
+bring green room into jar
+exit
+bring key out
+

@@ -1,0 +1,23 @@
+put oobleck in k room
+jump over, make jar
+
+go in k room, jump over, make jar
+go in k room, jump over, make jar
+
+bring k room into b room water
+jump in, make jar
+take jar out
+bring b room into new jar
+take key, jump in, get block, leave, leave
+
+jump in jar with oobleck, without touching key, remove oobleck
+touch block.  with 2 blocks, bring 1 up to ledge
+use clutch trick to get 2nd block above ledge
+
+get both jars above ledge
+
+twice:
+  bring block into jar
+  use block to throw key over
+  jump over, take key out
+
