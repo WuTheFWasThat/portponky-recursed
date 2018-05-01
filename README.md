@@ -8,6 +8,10 @@ This file goes in a location like
 for paradox room:
   have to lose track of green room
   then make paradox again to get back into it
+ah - is_this_easy_mode does something similar with jar
+
+have to exit from room carrying itself
+  not sure how to make this true.. perhaps no way to get it back to where it was
 
 
 for fan room:

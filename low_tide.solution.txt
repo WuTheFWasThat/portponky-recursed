@@ -1,0 +1,7 @@
+go in r1, grab chest, make jar
+go in chest, throw green blcok down
+go in jar with key
+
+
+go in r1, throw green block down, exit
+go in r1, grab chest

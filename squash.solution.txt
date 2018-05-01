@@ -1,0 +1,9 @@
+bring out of water, take out key
+bring in water
+take out 2 blocks
+take room out of water
+bring in key, leave up top
+bring in a block
+throw key left
+stand on block, jump to middle
+throw key down, jump back

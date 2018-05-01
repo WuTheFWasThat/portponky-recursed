@@ -1,0 +1,9 @@
+go in room2
+go in room1
+take room2 out
+take block into room 2
+take block into room 1
+take room2 back into room1
+block into room 1, throw r1 over
+take block out
+jump on 2 blocks, exit

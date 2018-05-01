@@ -1,0 +1,30 @@
+jump in room x4
+throw room down, exit
+bring key up, drop, exit
+bring room up, then using block, up to ledge
+exit with block
+throw room over
+exit with key
+
+== diamond
+
+jump in room x5
+throw room down, exit
+bring key up, drop, exit
+bring room up, then using block, up to ledge
+exit with block
+throw room over
+exit with key
+put room at lock
+exit with block
+
+stack blocks, bring room above
+jump in room x4
+bring room down, throw left
+throw block left
+exit
+bring key up, drop, exit
+bring room up, and *holding it*, exit
+jump in, get block, exit, drop
+jump and throw room to right
+exit with key
