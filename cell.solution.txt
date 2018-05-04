@@ -1,4 +1,39 @@
-unlock cell 1, put chest at where lock was
-jump in
-unlock cell 2, put in aqua
-go in, take block out
+unlock room, bring outside cell, jump in
+unlock other room, put at lock
+take first room into aqua morta
+jump in, take block out
+take room out of aqua morta
+put green room into room, at top, exit
+take block in, jump in green room
+take block down
+jump up, take green room down
+put block near ledge
+use it to throw green room at star
+use block to exit
+
+== paradox
+
+unlock room, bring outside cell, jump in
+unlock other room, put at lock
+take first room into aqua morta
+jump in, take block out
+put block over ledge with aqua morta, and green room on ledge hanging over aqua morta
+jump in green room
+exit
+
+put oobleck in fan room, exit
+take key out
+retrieve oobleck from fan room, put in key room
+take key into fan room, take fan out
+retrieve oobleck from key room, put in fan room
+take fan into key room.  unlock, use fan to make jar
+retrieve oobleck from fan room, jump in jar, leave where lock was
+take key room into fan room
+retrieve 2 keys to get to block
+put block in key room
+take key room out
+retrieve key from key room
+taking key, retrieve fan from fan room
+take fan into key room, unlock, go up to make jar
+jump in jar,move oobleck away from lock, hold block
+take blocks out, stack them to jump

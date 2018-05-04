@@ -1,0 +1,9 @@
+bring key room into block room
+take out 2 keys, get block
+bring block in, unlock, make jar
+take room and jump in jar
+throw block and room over
+take room up, make jar
+exit
+bring block room into jar
+pretty easy from there.  have to take key room into block room at some point
