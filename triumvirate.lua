@@ -29,11 +29,11 @@ oooooooooooooooooooo
 ]])
 
   Spawn("crystal", 10, 3.3)
-  Spawn("player", 10, 9)
-  Global("chest", 15, 12, "block_room")
-  Spawn("record", 5, 12, "sounds/voices/w1")
+  Spawn("player", 10, 10)
+  Global("chest", 15, 13, "block_room")
+  Spawn("record", 5, 13, "sounds/voices/w1")
 
-  Spawn("chest", 12, 9, "reject")
+  -- Spawn("chest", 12, 9, "reject")
 end
 
 function block_room()
@@ -55,9 +55,9 @@ function block_room()
 oooooooooooooooooooo
 ]])
 
-  Global("chest", 15, 12, "key_room")
-  Spawn("chest", 5, 12, "empty_room")
-  Spawn("player", 10, 9)
+  Global("chest", 15, 13, "key_room")
+  Spawn("chest", 5, 13, "empty_room")
+  Spawn("player", 10, 10)
   Spawn("lock", 7.5, 12.5)
   Spawn("box", 10, 13)
 end
@@ -82,7 +82,7 @@ oooooooooooooooooooo
 ]])
 
   Global("chest", 13, 13, "start")
-  Spawn("player", 10, 12)
+  Spawn("player", 10, 13)
   -- Spawn("yield", 18, 8)
   -- Spawn("yield", 2, 5)
   Spawn("key", 7, 13)
