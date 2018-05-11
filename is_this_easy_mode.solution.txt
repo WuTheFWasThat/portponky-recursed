@@ -18,8 +18,7 @@ get block (
    bring room up
    bring 3rd block up, out
    out again, jump and throw down
-   throw room down too
-   put both blocks such that you can exit
+   throw room down too, if needed
   )
 get non-green copy of room (
     go in room
@@ -42,7 +41,7 @@ go in jar, take out green room
 exit
 
 take key into non-green room
-key into green room
+key into green room, drop it
 jump in green room
 jump in green room again, make jar
 do get_block

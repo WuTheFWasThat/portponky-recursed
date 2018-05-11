@@ -1,0 +1,30 @@
+go in r1, bring out key
+bring r1 in water, bring out block
+bring r2 out of water, bring block in
+throw green room to entrance, exit
+throw r2 back to water
+bring r1 in
+bring into r2
+get 4 blocks from r1, stack them up
+put r2 on top (out of water)
+throw r2 over the top
+get key from r1
+leave with key
+
+
+
+=== diamond
+easy to trigger
+
+same as advanced sluice
+
+bring fan out, fetch green room, put in room
+go in green room, bring out fan, bring green room up
+put fan under gap, throw green room so that it floats up
+exit, hold right, get key
+go in room
+bring fan down, take key up
+go in room
+go in room, put fan on left
+throw room up
+exit, hold right

@@ -1,3 +1,4 @@
+==== UNINTENDED
 bring out of water, take out key
 bring in water
 take out 2 blocks
@@ -7,3 +8,6 @@ bring in a block
 throw key left
 stand on block, jump to middle
 throw key down, jump back
+grab block, fall down,  throw left at right time
+make jar
+take block in

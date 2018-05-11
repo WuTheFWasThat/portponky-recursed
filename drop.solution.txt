@@ -10,12 +10,8 @@ take room up to other block
 take block into room
 leave block at edge, stack, go into room and exit
 throw all 3 items left
-take a block out
+put room up, take a block out
 
-take block into room
-leave at ledge
-use clutch trick to get room above
-jump up, leave room at door
-bring block out
-throw room down
+drop block
+throw room down (to very bottom)
 bring block out

@@ -14,3 +14,56 @@ jump in  green g room
 throw key to unlock again
 throw green room up
 exit
+
+=== NEW VERSION
+
+get key from gem room
+unlock, put green gem room in o room
+get key from gem room
+bring out non-green gem room
+go in o room, take out green gem room and put in non-green one
+exit, take o room into g room
+
+put g room in o room,
+get key from g room, unlock, bring non-green g room out
+bring g room out from o room
+bring key in o room, unlock, make jar
+bring jar in o room.  go in jar, get key, exit, unlock and bring jar out
+bring non-green g room into jar (glitch)
+go in room
+take key, throw to unlock
+jump in green g room
+jump in green g room, bring out extra key
+throw key to unlock again
+throw green room up
+exit with key
+
+=== DIAMOND
+
+get key from gem room
+unlock, put green gem room in o room
+get key from green gem room
+put green gem room in non-green gem room
+bring out non-green gem room
+take o room into g room
+into green g room
+put g room into o room, exit with o room
+
+in paradox now.
+go in o room, retrieve key from g room, make jar
+with jar, go in o room
+go in g room, get key, unlock
+go in jar, exit
+bring g room into jar (glitch), drop
+exit
+
+jump down!
+
+go in room
+make jar
+bring jar into room
+jump in jar, exit
+jump in second jar
+bring out green room
+
+ basically done

@@ -1,3 +1,4 @@
+== UNINTENDED
 take key in r1
 take r2 out
 take r1 into r2
@@ -8,3 +9,21 @@ take r3 into r2, put above
 unlock another r3, take into r3 (above)
 take block into r3
 use clutch trick to get 2nd block
+
+== MAYBE INTENDED?
+take key in r1
+take r2 out
+take r1 into r2
+throw left, take key into r1
+take r2 out, throw down
+bring r1 down, into r2, put above water
+bring key into r1
+bring copy of r2 out
+bring r2 into r2, throw left
+unlock r3, bring above
+bring r2 into r3
+go down, bring block into r2
+throw block left, jump over
+throw block and key down
+unlock
+bring block into r3

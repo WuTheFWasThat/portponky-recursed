@@ -9,7 +9,7 @@ get 3 oobs, grab block, get key
 bring into 1
 unlock,
 bring out to entrance
-exit, copy room 1, bring back in
+exit, copy room 1, bring back in (so we have room 1 and green room 2, in room 1)
 
 // at this point you can easily make paradox (see below)
 
@@ -24,7 +24,10 @@ repeatedly:
 // paradox
     creation:
       exit to top level, bring room 1 into room 1
-      take room 1 into room 2, then into room 1
+      take room 1 into room 2
+      get 3 ooblecks to get key
+      bring key into room1, put room2 at lock
+      exit exit
     solve:
 
       go in room, take key out, go back in, unlock x2, jar

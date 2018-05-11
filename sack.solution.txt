@@ -1,0 +1,11 @@
+go in room, make jar
+go in room with block, leave atop, make jar
+retrieve block from room
+take room and 2nd jar up
+bring block into other jar
+exit room
+
+go on ledge
+bring room into jar
+put key at top by bringing into room
+go up, exit with key

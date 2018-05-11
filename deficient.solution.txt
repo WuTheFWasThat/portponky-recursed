@@ -21,5 +21,5 @@ trigger:
   go in room, make jar, bring key in, throw across
   go in room, make jar, bring room in, throw across, exit
   go in room, bring out block, unlock, put room where lock was
-  exit a bunch... bring block with!
+  bringing block with, exit twice
 

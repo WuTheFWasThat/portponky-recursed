@@ -14,32 +14,32 @@ function start()
 |..................|
 |..................|
 |..................|
-|..................|
-|..................|
-|....oo......oo....|
-|....oo......oo....|
-|....oo......oo....|
-|....oooo--oooo....|
-|....oooo..oooo....|
+|......oo--oo......|
+|......oo..oo......|
+|......oooooo......|
+|......oooooo......|
+|....oooooooooo....|
 |....oooooooooo....|
 |..................|
 |..................|
 |..................|
+|....oooooooooo....|
+|....oooooooooo....|
 oooooooooooooooooooo
 ]])
 
-  Spawn("crystal", 10, 12.5)
-  Spawn("lock", 6, 12.5)
-  Spawn("lock", 8, 12.5)
-  Spawn("lock", 12, 12.5)
-  Spawn("lock", 14, 12.5)
+  Spawn("crystal", 10, 10.5)
+  Spawn("lock", 5.5, 10.5)
+  Spawn("lock", 7.5, 10.5)
+  Spawn("lock", 12.5, 10.5)
+  Spawn("lock", 14.5, 10.5)
   Spawn("key", 3, 13)
   Spawn("key", 17, 13)
-  Spawn("player", 10, 9)
-  Spawn("chest", 12, 4, "start")
-  Spawn("box", 8, 4)
-  Spawn("yield", 6, 3)
-  Spawn("yield", 14, 3)
+  Spawn("player", 10, 4)
+  Spawn("chest", 12, 2, "start")
+  Spawn("box", 8, 2)
+  Spawn("yield", 6, 6)
+  Spawn("yield", 14, 6)
 end
 
 
