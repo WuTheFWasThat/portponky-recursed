@@ -7,3 +7,16 @@ take room2 back into room1
 block into room 1, throw r1 over
 take block out
 jump on 2 blocks, exit
+
+go in room2
+bring block into room1
+bring block in room 2, bring down
+
+throw room1 near entrance, stack blocks,
+exit with room1
+
+jump into room1
+take room1 back into room2
+take block into room1
+take block into room2
+

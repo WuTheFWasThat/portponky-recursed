@@ -12,7 +12,7 @@ exit with star room
 put star room in water, put water room inside it, exit
 take jar into star room, then into water room
 go in jar, go in star room
-exit with star room,
+exit with water room,
 take star room into water room, then into star room
 put water room in star room, at top, exit
 make jar,drop  it, exit
@@ -37,3 +37,8 @@ bring out key
 
 
 why are there 2 keys in the key room?
+
+
+// NEW PARADOX
+use fact that fan can't blow while blown
+throw fan to trigger key to start blowing
