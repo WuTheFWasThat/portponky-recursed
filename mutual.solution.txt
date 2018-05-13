@@ -1,22 +1,36 @@
+
 go in room2
+take block into  room1
+take block into  room2
+take block into  room1
+throw room left, exit with block
+exit
+take key into room
+
+
+PARADOX
+
+go in room2
+take block into  room1
+take block into  room2
+drop
+go in room 1
+take out room2
+jump up, exit
+
+==
 go in room1
-take room2 out
-take block into room 2
-take block into room 1
-take room2 back into room1
-block into room 1, throw r1 over
-take block out
-jump on 2 blocks, exit
-
-go in room2
-bring block into room1
-bring block in room 2, bring down
-
-throw room1 near entrance, stack blocks,
-exit with room1
-
-jump into room1
-take room1 back into room2
-take block into room1
-take block into room2
-
+go in room2, get fan, take out
+put room2 on ledge
+go in room2, get fan, take out
+bring fan in, retrieve room1
+retrieve another fan
+throw room2 left
+go in room1
+go in room2, get fan, take out
+go back in room 2
+leave fan by room 1, go in room 1, retrieve room 2
+take fan, jump into room2
+put room2 into room1, at top
+exit (paradox again)
+  now it's easy!

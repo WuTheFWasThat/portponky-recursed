@@ -37,3 +37,42 @@ bring cauldron out
 bring cauldron out again
 get block from other thread
 
+=== PARADOX
+
+bring cauldron in room
+go in cauldron, get green room, go in cauldron
+make jar, bring room in jar
+bring room in cauldron
+bring cauldron in room, then into green room
+go in cauldron
+bring green room into cauldron
+exit
+
+--- in reject now
+
+bring fan into cauldron
+get room
+go in room with fan make jar
+bring room to other thread
+go in other thread
+bring cauldron into jar
+go in cauldron
+bring cauldron into cauldron
+go into cauldron (to switch threads)
+bring cauldron into room
+throw on ledge
+do fan trick to get to key with cauldron (timing tight)
+leave cauldron at top, bring back cauldron from other thread to put below
+store key in other thread
+use fan to escape area with one of the two cauldrons
+throw cauldron left, exit with it
+go in room, make jar
+bring room into cauldron
+switch threads, bring cauldron into jar
+take fan and key from other thread
+switch threads, take cauldron into room
+throw at top, get to key..
+bring key from other thread
+switch to other thread
+use fan to escape with cauldron
+
