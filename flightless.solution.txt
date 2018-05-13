@@ -1,0 +1,12 @@
+
+
+
+RUBY
+bring cauldron in room
+switch threads
+bring cauldron out of room
+bring room into other cauldron
+stick block as high as possible on right
+throw room up, get it
+grab room, throw as high as possible by jumping on block
+go up, take room, jump across gap
