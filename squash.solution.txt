@@ -11,3 +11,20 @@ throw key down, jump back
 grab block, fall down,  throw left at right time
 make jar
 take block in
+
+==== REAL
+bring out of water, take out key
+bring in water
+take out a block, go back in
+throw block in upper left (to hold future key)
+make jar
+go in room, get block
+go in room, get block
+bring room out of water
+take block in, throw near yield, make jar
+put key in room
+bring block in room, throw left
+throw key on top of it, on left, exit
+bring dry jar into wet one
+using 2 blocks, hang key over ledge without having it touch aqua
+bring other block into jar
