@@ -1,7 +1,72 @@
-go in r1, grab chest, make jar
-go in chest, throw green blcok down
-go in jar with key
+go in room, make jar
+take jar in room.
+jump in right side jar, exit, take left jar out  <-- 1st jar
 
+take key in room, make jar
+take jar in room, make jar <-- 2nd jar
 
-go in r1, throw green block down, exit
-go in r1, grab chest
+go in room, make jar
+take jar in room.
+jump in right side jar, exit, make jar  <-- 3rd jar
+
+take green chest into first jar, leave in glitch room, exit
+go in second jar
+
+go in left jar, get key, LEAVE there
+go in other jar, get room
+move_room_to_left (
+    go in room
+    hold room
+    go in room, make jar
+    bring jar in room, go in right side jar, exit with left
+    put green room in jar (glitch), exit
+    go in room, make jar
+    bring jar in room
+    go in right side jar, exit
+    retrieve green room from left jar, leave there, exit
+    exit
+)
+go in room, hold green, make jar
+bring key in jar
+unlock
+go in room, make jar
+bring jar in room, jump in right jar, exit
+bring green room in jar, put in glitch room, exit, exit
+bring room in water, get oobleck
+exit
+exit
+exit
+hold block
+
+go in jar 3
+go in jar, retrieve room
+drown room
+get oobleck exit
+exit
+
+===== PARADOX
+
+go in room, make jar
+take jar in room.
+jump in right side jar, exit, take left jar out  <-- 1st jar
+
+go in room, make jar
+take jar in room.
+jump in right side jar, exit, make jar  <-- 3rd jar
+
+bring room in 1st jar, leave in glitch room
+
+go in 3rd room
+go in jar, retrieve green room
+jump in itself
+drown in acid, exit
+
+----
+
+take r1 down, bring fan into it
+make jar
+bring room into jar
+put fan down, go up with room
+place keys by entrance
+drown room, go in, exit with key
+

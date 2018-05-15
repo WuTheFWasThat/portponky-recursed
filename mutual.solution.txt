@@ -1,11 +1,23 @@
 
 go in room2
-take block into  room1
-take block into  room2
-take block into  room1
-throw room left, exit with block
-exit
-take key into room
+go in  room1
+retrieve room2 from room1
+take block into room2, leave at top
+take block into room2
+throw both rooms left
+jump up, exit
+bring room2 into room1, exit
+bring block into room1                  r1
+jump into room2
+jump into room1, bring out room2
+bring room2 down
+bring block into room2, leave at top
+take block into room2
+throw room left
+jump up, exit
+exit with block
+put r2 into room1 to avoid paradox
+exit with block
 
 
 PARADOX
