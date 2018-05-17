@@ -63,10 +63,17 @@ drown in acid, exit
 
 ----
 
-take r1 down, bring fan into it
+take r1 down, bring fan into it throw to right side
 make jar
-bring room into jar
-put fan down, go up with room
-place keys by entrance
-drown room, go in, exit with key
+go in again, make another jar
+bring room into jar, go up with room
+put one key above ledge but blown by fan
+take room into aqua morta
+go in room, make jar
+take room out of aqua morta
+put key at entrance, exit
+take jar down and exit
+go in other jar, take key out, unlock
+take room into jar
+swim up to key, bring key into room
 

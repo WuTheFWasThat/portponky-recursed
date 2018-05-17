@@ -1,0 +1,51 @@
+go in cauldron
+bring key into cauldron
+bring key into cauldron, drop key
+go in cauldron
+put green cauldron in room, exit, go back in
+jump in green cauldron
+bring room in cauldron
+bring cauldron in room, then in cauldron
+drop on right, go in left cauldron
+exit, bring in key
+throw key and gcauldron down
+unlock, put gcauldron inside, bring key out
+go in gcauldron
+go in right cauldron
+take oobleck into gcauldron
+take oobleck into left cauldron
+
+take key in room
+
+
+start state
+1 - 2c
+2 - g3c
+3 - 1c
+
+goal
+1 - 2c
+2 - r -> g3c, oob
+3 - r -> 1c, key, key
+
+
+
+=== CRASH
+go in caludron
+take green cauldron in room
+go in green cauldron
+take cauldron in room
+take green cauldron into cauldron
+take cauldron into green cauldron
+drop, take cauldron into cauldron
+
+
+start state
+1 - 2c
+2 - g3c
+3 - 1c
+
+end state before crash
+1 - g3c
+2 - r
+3 - r has 2c, 1c <--- we try to take 1c into 2c

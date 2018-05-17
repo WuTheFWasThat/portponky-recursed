@@ -2,3 +2,4 @@ root room, gem room, key room, oob room
 
 
 WANT:
+oob room in dry gem room, in pool
