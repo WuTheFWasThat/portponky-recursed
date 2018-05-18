@@ -1,48 +1,17 @@
-bring room in well,
+BringJar(N, J) # bring jar J to level N with 0 yield spent {
+  BringJar(N-1, anyjar), make jar, bring J into that, make jar J1
+  BringJar(N-1, J1), jump in J1
+  jump in anyjar, bring block out (at level N-1)
+  exit with J, bring J up to level N
+}
 
-L(N, jar) = room with arbitrary jar at N and 1 green left
-S(N) = room with S(N-1) at N and 1 green left
+Want:
 
-MAKE L(N, J) where BLOCK AT N-1 =
-  bring J into room, make jar J'
-  make L(N-1, J')
-  go inside
-  jump into J' (at N-1)
+BringJar(5, J)
+J' =  make jar
+BringJar(5, y)
+J'' = make jar
 
-  go in S(N-1) at N-1
-  go in S(N-2) at N-2...
-  ...
-  bring block out to N-2, jar up to
-
-MAKE S(N) =
-
-
-MAKE L2 =
-  go in room, bring block down
-  make jar
-  bring jar in room, put at right side (l1)
-  make jar
-  bring in room, bring to l1.  make jar
-  bring in room, bring to l1.  jump in jar
-  go in jar, bring block out, drop at l1
-  make jar, bring to l2
-  make jar
-
-MAKE L4 =
-  MAKE L2
-  MAKE L2 (almost)
-
-MAKE L2
-
-NEED
-  bring main jar to l2, make jar
-  outside: move block to l2
-  bring another jar in, bring main jar to l3
-  use other to bring block to l3, jar to l4
-  make jar
-  outside: move block to l4
-  bring another jar in, bring main jar to l5
-  use other to bring block to l4, jar to l5
-
-  go into jar, retrieve block.  take key out.
-  ... block is stuck??
+go in first jar, retrieve block from jar, use to retrieve key, exit
+go in second jar, bring block into jar, exit
+retrieve block

@@ -30,19 +30,54 @@ oooooooooooooooooooo
 
   Spawn("player", 10, 13)
   Spawn("chest", 12, 13, "stairs")
+  Spawn("chest", 10, 13, "fan")
   Global("box", 8, 13)
 end
 
+function fan()
+  ApplyTiles(villa, 0, 0, [[
+|.....o...o...o....|
+|.....o...o...o....|
+|.....o...o...o....|
+|..................|
+|...o...o...o...ooo|
+|...o...o...o...ooo|
+|...o...o...o...ooo|
+|...o...o...o...ooo|
+|...o...o...o...ooo|
+|...o...o...o...ooo|
+|...o...o...o...ooo|
+|...............ooo|
+|...............ooo|
+|...............ooo|
+oooooooooooooooooooo
+]])
+  Spawn("player", 2.5, 13)
+  Spawn("yield", 6.5, 13)
+  Spawn("yield", 10.5, 13)
+  Spawn("yield", 14.5, 13)
+  Spawn("diamond", 19, 2)
+  Global("fan", 3, 13)
+  Spawn("key", 4.5, 3.5)
+  Spawn("key", 8.5, 3.5)
+  Spawn("key", 12.5, 3.5)
+  Spawn("lock", 4.5, 12.5)
+  Spawn("lock", 8.5, 12.5)
+  Spawn("lock", 12.5, 12.5)
+  -- Spawn("lock", 16.5, 12.5)
+end
+
+
 function stairs()
   ApplyTiles(villa, 0, 0, [[
-|..................|
-|..................|
-|.........ooooooooo|
-|.........ooooooooo|
-|.........ooooooooo|
-|.........ooooooooo|
-|......oooooooooooo|
-|......oooooooooooo|
+|oooooo............|
+|oooooo............|
+|oooooo...ooooooooo|
+|oooooo...ooooooooo|
+|ooo......ooooooooo|
+|ooo......ooooooooo|
+|ooo...oooooooooooo|
+|ooo...oooooooooooo|
 |......oooooooooooo|
 |......oooooooooooo|
 |...ooooooooooooooo|
