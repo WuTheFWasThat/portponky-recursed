@@ -1,34 +1,29 @@
 go in cauldron
-bring key into cauldron
-bring key into cauldron, drop key
+gcauldron in room, exit
+key in room, in cauldron
+room in cauldron
+cauldron in room, in green cauldron (put on right)
+take left cauldron into right cauldron, then outside
+take room into cauldron, then exit, then back in room (oob becomes room), then back in cauldron, then in cauldron again
+put cauldron in room, into green cauldron, leave on left
+take key in right cauldron, exit, go back in
+take key and cauldron down
+unlock, put green inside, go in green, go in left
+take room into green, into right
+take green cauldron to room, leave at top, exit
+take key into room, into green cauldron, into left cauldron, exit, drop
+go back in room, in green cauldron, in right cauldron
+take green cauldron out
+go in green cauldron, in left
+bring oobleck into green, drop
+go in right cauldron, put green back in room at top, go in green
+take oobleck into left, exit
+
+REVERSE CYCLE
 go in cauldron
-put green cauldron in room, exit, go back in
-jump in green cauldron
-bring room in cauldron
-bring cauldron in room, then in cauldron
-drop on right, go in left cauldron
-exit, bring in key
-throw key and gcauldron down
-unlock, put gcauldron inside, bring key out
-go in gcauldron
-go in right cauldron
-take oobleck into gcauldron
-take oobleck into left cauldron
-
-take key in room
-
-
-start state
-1 - 2c
-2 - g3c
-3 - 1c
-
-goal
-1 - 2c
-2 - r -> g3c, oob
-3 - r -> 1c, key, key
-
-
+put green in room, go in green
+take room into cauldron
+take cauldron in room, cauldron into green, drop, cauldron into cauldron
 
 === CRASH
 go in caludron
@@ -48,4 +43,4 @@ start state
 end state before crash
 1 - g3c
 2 - r
-3 - r has 2c, 1c <--- we try to take 1c into 2c
+g - r has 2c, 1c <--- we try to take 1c into 2c
