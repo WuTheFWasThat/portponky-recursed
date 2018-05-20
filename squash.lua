@@ -33,16 +33,16 @@ function roomA(is_wet)
 ...I...............I
 ...I...............I
 ...I...............I
-...#####..........dI
-...45556...........I
-...3KKKq..........dI
-...................I
-...................I
-...................I
-....4556.......##..I
-....4556.......I...I
-....4556.......I...I
-45555556ddddddd45555
+...#####...........I
+...45556........4555
+...3KKKq........oKKK
+................I...
+................I...
+................I...
+....4556........#...
+....4556............
+....4556............
+45555556ddddddddd455
 ]])
   if is_wet then
     ApplyTiles(tile_mapping, 0, 0, [[
@@ -50,17 +50,17 @@ function roomA(is_wet)
 ....................
 ....................
 ....................
-TTT.TTTTTTTTTTTTT01.
-UUU.....UUUUUUUUUkl.
-UUU.....UUUUUUUUUkl.
-UUU.....UUUUUUUUUkl.
-0112UUUUUUUUUUUUUEF.
-kllmUUUUUUUUUUUUUUU.
-EFFGUUUUUUUUUUUUUUU.
-UUUU....UUUUUUU..UU.
-UUUU....UUUUUUU.UUU.
-UUUU....UUUUUUU.UUU.
-........RRRRRRR.....
+TTT.TTTTTTTTTTTTTTT.
+UUU.....UUUUUUUUUUU.
+UUU.....UUUUUUUU....
+UUU.....UUUUUUUU....
+0112UUUUUUUUUUUU.012
+kllmUUUUUUUUUUUU.klm
+EFFGUUUUUUUUUUUU.EFG
+UUUU....UUUUUUUU.UUU
+UUUU....UUUUUUUUUUUU
+UUUU....UUUUUUUUUUUU
+........RRRRRRRRR...
 ]])
   else
     ApplyTiles(tile_mapping, 0, 0, [[
@@ -73,19 +73,19 @@ UUUU....UUUUUUU.UUU.
 ....................
 ....................
 ....................
-.................01.
-.................kl.
-0112.............kl.
-kllm.............kl.
-EFFG.............EF.
+....................
+.................012
+0112.............klm
+kllm.............EFG
+EFFG................
 ....................
 ]])
   end
-  Spawn("player", 16, 10)
-  Spawn("yield", 6, 10)
+  Spawn("player", 18, 5)
+  Spawn("yield", 6.5, 10)
   Spawn("lock", 4.5, 9.5)
   Spawn("crystal", 1.5, 5)
-  Spawn("box", 16.5, 13.5)
+  Spawn("box", 18.5, 13.5)
 end
 
 tiles = "../communityDLC_beta/tiles/glacier_v2"
