@@ -3,12 +3,40 @@ in water, make jar
 in water, make jar
 throw 2 jars and k-room down, make jar
 bring b room into jar
+
+go in k room, make jar, bring in b room, make jar <-- jar 3
+
+bring b room into k jar, go in b room
+take block out, then out, into key room, make jar
+move key left, bring block back left, make jar
+go into old k jar, move key out             <------- PROBLEMATIC B/C ACID
+
+bring b room jar into new k jar
+drop, bring block into b room jar
+
+WANT ENDING:
+
+take block into key room, move key, ..
+
+take jar into key room
+jump in jar/room with block, key already there
+
+
+=====
+OLD VERSION
+=====
+
+bring k-room into b-room
+in water, make jar
+in water, make jar
+throw 2 jars and k-room down, make jar
+bring b room into jar
 go in b room, make jar
 
 bring b room into k jar, go in b room
 take block out, then out, into key room
 move key left, bring block back left, make jar
-go into old k jar, move key out
+go into old k jar, move key out             <------- PROBLEMATIC B/C ACID
 
 bring b room jar into new k jar
 drop, bring block into b room jar

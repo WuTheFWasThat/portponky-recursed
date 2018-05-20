@@ -18,6 +18,7 @@ go in green cauldron, in left
 bring oobleck into green, drop
 go in right cauldron, put green back in room at top, go in green
 take oobleck into left, exit
+jump over, hold block
 
 REVERSE CYCLE
 go in cauldron
@@ -44,3 +45,21 @@ end state before crash
 1 - g3c
 2 - r
 g - r has 2c, 1c <--- we try to take 1c into 2c
+
+
+=== RUBY
+go in cauldron
+green cauldron in room, jump in green
+remove green from room, jump in non-green
+jump in cauldron
+
+go into main room
+retrieve oobleck, copy oob room
+put below, underneath where oob will drop
+go back up, retrieve oob, throw onto wall on right (on left of pillar)
+  grab room, jump up, catch oob->room as falling
+  exit with room
+  go in oob room, get oobleck
+  hold main room, bring into itself (what was oob)
+  jump up, drop, jump over, get, bring down to key
+  bring key up, go up, get oob, jump back down, touch key, done!

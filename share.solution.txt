@@ -39,13 +39,13 @@ get block from other thread
 
 === PARADOX
 
-bring cauldron in room
+bring cauldron in room (down)
 go in cauldron, get green room, go in cauldron
 make jar, bring room in jar
 bring room in cauldron
 bring cauldron in room, then into green room
 go in cauldron
-bring green room into cauldron
+bring green room into cauldron, drop
 exit
 
 --- in reject now

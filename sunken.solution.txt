@@ -4,10 +4,10 @@ bring r2 out of water, bring block in
 throw green room to entrance, exit
 throw r2 back to water
 bring r1 in
-bring into r2
+bring into r2 again
 get 4 blocks from r1, stack them up
 put r2 on top (out of water)
-throw r2 over the top
+go in r2 with r1, throw r2 over the top
 get key from r1
 leave with key
 

@@ -1,5 +1,5 @@
-
-
+CRYSTAL
+midair jump
 
 RUBY
 bring cauldron in room

@@ -1,4 +1,4 @@
-throw chest down, take block, jump in, drop, exit
+take block, jump in, drop, exit
 bring key in, make jar
 bring room into jar
 drop, go into room, make jar
@@ -14,12 +14,38 @@ bring block out
 === paradox
 
 trigger:
-  throw chest down, take block, jump in, drop, exit
+  take block, jump in, drop, exit
   bring key in, make jar
   bring room into jar, and down
   bring key into room
-  go in room, make jar, bring key in, throw across
-  go in room, make jar, bring room in, throw across, exit
-  go in room, bring out block, unlock, put room where lock was
-  bringing block with, exit twice
+  bring key into room
+  bring key into room, make jar
+  bring room in jar, throw across, exit with key, exit with key
+  enter room, retrieve block
+  unlock and put room at where lock was
+  bring block down, make jar
 
+  --- in paradox
+  jump with jar, throw down in midair and enter
+  go up, get room, exit
+  jump, throw down in midair and enter
+  exit with block
+  grab room, go up, bring down to fan
+  bring key down to fan
+  put key in room, exit
+  bring fan in room, go up, make jar
+  bring room in jar
+  bring fan in room, bring fan in room, bring fan into room
+  bring key and room to LEFT side
+  make jar
+  go in jar, exit with fan
+  bring room and key up above, go back down make jar
+  go in jar, exit with fan
+  throw room and key to the right so they fall
+  carry fan down
+  unlock and place room there, exit with fan
+
+IDEAS:
+  bring room (via jar?) into paradox room somehow
+  then using block take out, then bring down to fan area with a green key
+  use green key to make another paradox, bringing fan, now have 2 fans!

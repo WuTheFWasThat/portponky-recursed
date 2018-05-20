@@ -1,0 +1,86 @@
+====================
+LEVELS BY QUALITY (not ordered within sections)
+====================
+
+BAD LEVELS (would prefer tweaked or removed from DLC)
+
+Manhole crystal: easy, not interesting
+Locky triad crystal: is easy and unnecessarily tedious. oobleck could at least be next to entrance.
+Borrow crystal: maybe it's not so bad, but I think it's too complicated for what it is, so I didn't find it too fun. funny how you can't jump into a room on the lower ledge because the ceiling is so low.  simplification would be good.
+Sunken crystal: not as bad as the others here, but there's some unnecessary stuff at the level's beginning, and I think the main ideas are covered in other levels.
+Flightless diamond: not too interesting, main idea already explored in clutch
+Flightless crystal: I really thought this level would be clever, so I was disappointed.  Can't this trick be in a non-cauldron level instead?
+
+OK LEVELS (indifferent to inclusion in DLC)
+
+Deficient crystal: not too interesting, but I like the diamond a lot which explains it
+Easy mode crystal: again, explained by the diamond
+Sack crystal
+Locky triad diamond
+Rescue ruby: oobleck transformation is funny
+
+GOOD LEVELS (good inclusion in DLC)
+
+Low tide diamond
+Barter crystal
+Sunken diamond: good tricky level, seems impossible but wasnt unfair
+Cliff crystal: i like this level, though it has no big new ideas
+Easy mode diamond: Glitch room triggered.. fun but takes fairly long, with repeated use of a subroutine to retrieve a block
+Cell crystal: Double global of a single room is new, but it behaves as expected.  Fun trick to hide from acid, which I found quickly.  It took me awhile despite that, though it was easy in the end.
+Cell diamond: tricky to discover, I only found it because I knew it existed.  some weird facts explored for the first time here, like that the fan doesn't blow while on a block, and that the green items attempt to spawn in the beginning of loading a room (not after you unlock).  overall mechanics weren't too questionable though, just slightly so
+High tide crystal: nice glitch level usage (used to avoid water)
+High tide diamond: again good
+Squash crystal
+
+GREAT LEVELS (contributes to making DLC great)
+
+Mutual diamond
+Low tide crystal: Lots of jar hiding madness
+Deficient diamond: very good, makes me easily forgive the crystal.  players might be surprised about being able to go through the crystal if they hadn't seen that before
+Rabbit hole crystal: Funny level, i liked it a lot. Feels impossible at first but theres only really one thing to do and ends up not too hard.
+Mutual crystal: well made
+Share crystal
+Share diamond
+Rescue crystal
+Expedition crystal/diamond: I put it here even though it's not in the DLC because I liked it :)
+
+====================
+LEVELS BY DIFFICULTY (crystals only)
+====================
+I think ordering the levels exactly by difficulty isn't too important.  It's already roughly correct.  Here's a rough ordering:
+
+Easy mode
+Manhole
+Deficient
+Cliff
+Locky triad
+Sack
+Sunken
+Rabbit Hole
+Cell: double global of a single room is new, but it behaves as expected.  Fun trick to hide from acid
+Barter
+High tide
+Squash
+Borrow
+Share
+Mutual
+Low Tide
+Rescue
+
+I didn't include Flightless, since I wasn't sure where to place it.  It actually took me awhile, but it was hard only because I thought it would be clever
+
+====================
+COMMENTS ON LAYOUTS
+====================
+
+Many levels have slightly cumbersome layout.  Sometimes I think this is hard to fix, due to constraints from the solution.  Other times, I think it's easy to fix.
+- Sack: The ledge is very small, and you have to store 2 items there (in my solution)
+- Easy mode: diamond takes a long time to execute, and it's not very important that the oobleck is above, which also makes the left ledge small. Needing to put the blocks carefully on the left is quite annoying as well, (if you don't know about the fall down trick).
+- Deficient: in the main room, there's an icicle that looks like it can be thrown against (like Target), this caused me to have to restart.  Maybe make it thinner or remove it
+- Cell: maybe make the left side ledge stick out more to make the last jump easier
+- Barter: main room is very weird looking, I prefer something more standard so I don't have to wonder why it's like that
+- Low tide diamond: unfortunate i cant see the goal room at first
+- Mutual diamond: ledge is a bit small, on right side
+- Share diamond: why does that one room start up so high?
+- Squash: there's an unintended solution where you can jump to the middle if you bring in a block.  also, the main room is a bit weird, maybe the block location could be moved (can it be in the top left?)
+- Rescue ruby: the first room is irrelevant but was shaped so interestingly it made me wonder if I had to bring an item

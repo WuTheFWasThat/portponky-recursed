@@ -1,5 +1,14 @@
-root room, gem room, key room, oob room
+SOLUTION
 
-
-WANT:
-oob room in dry gem room, in pool
+go in room with block, put on right, put green above it, throw room into water,
+jump back, move green back to left, make jar 1, throw down
+go in, make another jar 2, throw down
+go in gem room, drop green block down, exit
+take key room into jar 2
+take green block into key room, move key left (over C shape), exit with block, exit
+bring jar in room, leave at top.  move green block back up.  make a jar
+bring jar 1 in gem room, leave at top, bring green block up, make jar
+take jar left, bring oob room in
+take 2 oobs out to stack green block high up
+take out another oob, bring into jar
+drop oob, go all the way into key room without touching anything, retrieve key
