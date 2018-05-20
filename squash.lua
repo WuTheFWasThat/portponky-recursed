@@ -21,6 +21,7 @@ JJ#.............4555
 56455555555555555555
 ]])
   Spawn("player", 5.5, 8)
+  Global("key", 6.5, 8)
   -- Spawn("chest", 12.5, 11.5, "roomA")
   Spawn("chest", 4.5, 8.5, "roomA")
 end
@@ -31,41 +32,38 @@ function roomA(is_wet)
 ...I...............I
 ...I...............I
 ...I...............I
-...######.......ddII
-...455556.........II
-...455556.......ddII
-...3KKKKq.........II
-................ddII
-..................II
-................ddII
-....45556.........II
-....45556.......ddII
-....45556.........II
-455555556ddddd455555
+...I...............I
+...#####..........dI
+...45556...........I
+...3KKKq..........dI
+...................I
+...................I
+...................I
+....4556.......##..I
+....4556.......I...I
+....4556.......I...I
+45555556ddddddd45555
 ]])
   if is_wet then
     ApplyTiles(tile_mapping, 0, 0, [[
 ....................
 ....................
 ....................
-....TTTTTTTTTTTTTTT.
-.........UUUUUUU....
-.........UUUUUUUUU..
-.........UUUUUUU....
-.........UUUUUUUUU..
-0112UUUUUUUUUUUU....
-kllmUUUUUUUUUUUUUU..
-EFFGUUUUUUUUUUUU....
-UUUU.....UUUUUUUUU..
-UUUU.....UUUUUUU....
-UUUU.....UUUUUUUUU..
-.........RRRRR......
+....................
+TTT.TTTTTTTTTTTTT01.
+UUU.....UUUUUUUUUkl.
+UUU.....UUUUUUUUUkl.
+UUU.....UUUUUUUUUkl.
+0112UUUUUUUUUUUUUEF.
+kllmUUUUUUUUUUUUUUU.
+EFFGUUUUUUUUUUUUUUU.
+UUUU....UUUUUUU..UU.
+UUUU....UUUUUUU.UUU.
+UUUU....UUUUUUU.UUU.
+........RRRRRRR.....
 ]])
   else
     ApplyTiles(tile_mapping, 0, 0, [[
-..................k.
-..................k.
-..................E.
 ....................
 ....................
 ....................
@@ -74,18 +72,20 @@ UUUU.....UUUUUUUUU..
 ....................
 ....................
 ....................
-0112................
-kllm................
-EFFG................
+....................
+.................01.
+.................kl.
+0112.............kl.
+kllm.............kl.
+EFFG.............EF.
 ....................
 ]])
   end
-  Spawn("player", 17, 13)
-  Global("key", 15, 13)
-  Spawn("yield", 7.5, 10)
+  Spawn("player", 16, 10)
+  Spawn("yield", 6, 10)
   Spawn("lock", 4.5, 9.5)
   Spawn("crystal", 1.5, 5)
-  Spawn("box", 18.5, 3.5)
+  Spawn("box", 16.5, 13.5)
 end
 
 tiles = "../communityDLC_beta/tiles/glacier_v2"
