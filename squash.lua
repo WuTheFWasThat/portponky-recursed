@@ -27,39 +27,39 @@ end
 
 function roomA(is_wet)
     ApplyTiles(tile_mapping, 0, 0, [[
-I..................I
-I..................I
-I..................I
-I..................I
-######..........ddII
-...456............II
-...456..........ddII
-...3Kq............II
+...I...............I
+...I...............I
+...I...............I
+...I...............I
+...######.......ddII
+...455556.........II
+...455556.......ddII
+...3KKKKq.........II
 ................ddII
 ..................II
 ................ddII
-......456.........II
-......456.......ddII
-......456.........II
-......456ddddd455555
+.....4556.........II
+.....4556.......ddII
+.....4556.........II
+.....4556ddddd455555
 ]])
   if is_wet then
     ApplyTiles(tile_mapping, 0, 0, [[
 ....................
 ....................
 ....................
-.TTTTTTTTTTTTTTTTTT.
-.......UUUUUUUUU....
-UUU....UUUUUUUUUUU..
-UUU....UUUUUUUUU....
-UUU....UUUUUUUUUUU..
-011112UUUUUUUUUU....
-kllllmUUUUUUUUUUUU..
-kllllmUUUUUUUUUU....
-kllllm...UUUUUUUUU..
-kllllm...UUUUUUU....
-kllllm...UUUUUUUUU..
-kllllm...RRRRR......
+....TTTTTTTTTTTTTTT.
+.........UUUUUUU....
+.........UUUUUUUUU..
+.........UUUUUUU....
+.........UUUUUUUUU..
+01112UUUUUUUUUUU....
+klllmUUUUUUUUUUUUU..
+klllmUUUUUUUUUUU....
+EFFFG....UUUUUUUUU..
+UUUUU....UUUUUUU....
+UUUUU....UUUUUUUUU..
+UUUUU....RRRRR......
 ]])
   else
     ApplyTiles(tile_mapping, 0, 0, [[
@@ -74,18 +74,17 @@ kllllm...RRRRR......
 ....................
 ....................
 ....................
-....................
-....................
-011112..............
-kllllm..............
+01112...............
+klllm...............
+klllm...............
+EFFFG...............
 ]])
   end
   Spawn("player", 17, 13)
   Global("key", 15, 13)
-  Spawn("yield", 8.5, 10)
-  Spawn("lock", 6.5, 9.5)
-  Spawn("lock", 6.5, 6)
-  Spawn("crystal", 1.5, 7)
+  Spawn("yield", 7.5, 10)
+  Spawn("lock", 5.5, 9.5)
+  Spawn("crystal", 1.5, 5)
   Spawn("box", 18.5, 3.5)
 end
 
