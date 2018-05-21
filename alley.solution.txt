@@ -1,0 +1,21 @@
+
+
+PARADOX
+bring cauldron into room, into green room
+green room into cauldron, drop, go in cauldron, exit
+--
+go in cauldron
+throw room down
+bring fan in cauldron, bring room down, drop
+go in cauldron
+bring cauldron in room
+go in cauldron
+bring fan in cauldron, at left of lowest plane
+take cauldron up, drop room down, go in cauldron
+bring cauldron in room
+put green room overhung so that fan would blow it
+jump in green room with cauldron
+jump in cauldron
+take room (blown up by fan), jump in cauldron
+jump in room
+throw room across, exit

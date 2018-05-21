@@ -6,7 +6,9 @@ bring b room into jar
 
 go in k room, make jar, bring in b room, make jar <-- jar 3
 
-bring b room into k jar, go in b room
+bring b room into k jar, go in b room, make jar
+bring jar in b room, make jar
+exit with jar
 take block out, then out, into key room, make jar
 move key left, bring block back left, make jar
 go into old k jar, move key out             <------- PROBLEMATIC B/C ACID
@@ -16,10 +18,20 @@ drop, bring block into b room jar
 
 WANT ENDING:
 
-take block into key room, move key, ..
+take block into key room, move key, make jar (to exit)
 
-take jar into key room
+bring dry block room jar into key room, bring key into block room, leave there
+go in wet b room jar, retrieve block
+
+go in jar with jar
+go in existing jar, retrieve block
 jump in jar/room with block, key already there
+
+
+Kjar-wet(
+    block
+  Bjar-dry()
+)
 
 
 =====

@@ -27,40 +27,23 @@ JJ#.............4555
 end
 
 function roomA(is_wet)
-    ApplyTiles(tile_mapping, 0, 0, [[
-...I...............I
-...I...............I
-...I...............I
-...I...............I
-...I...............I
-...#####...........I
-...45556........4555
-...3KKKq........oKKK
-................I...
-................I...
-................I...
-....4556........#...
-....4556............
-....4556............
-45555556ddddddddd455
-]])
   if is_wet then
     ApplyTiles(tile_mapping, 0, 0, [[
 ....................
 ....................
 ....................
-....................
-TTT.TTTTTTTTTTTTTTT.
-UUU.....UUUUUUUUUUU.
-UUU.....UUUUUUUU....
-UUU.....UUUUUUUU....
-0112UUUUUUUUUUUU.012
-kllmUUUUUUUUUUUU.klm
-EFFGUUUUUUUUUUUU.EFG
-UUUU....UUUUUUUU.UUU
-UUUU....UUUUUUUUUUUU
-UUUU....UUUUUUUUUUUU
-........RRRRRRRRR...
+..................0.
+TTTTTTTTTTTTTTTTTTk.
+UUUUUUUUUUUUUUUUUUk.
+UUUUUUUUUUUUUUUUUUk.
+012UUUUUUUUUUUUUUUE.
+klmUUUUUUUUUUUUUUUU.
+EFGUUUUUUUUUUUUUUUU.
+UUUUUUUUUUUUUUUUUUU.
+UUUUUUUUUUUUUUUUUUU.
+UUUUUUUUUUUUUUUUUUU.
+UUUUUUUUUUUUUUUUUUU.
+RRRRRRRRRRRRRRRRRRR.
 ]])
   else
     ApplyTiles(tile_mapping, 0, 0, [[
@@ -70,21 +53,38 @@ UUUU....UUUUUUUUUUUU
 ....................
 ....................
 ....................
+..................d.
 ....................
-....................
-....................
-....................
-.................012
-0112.............klm
-kllm.............EFG
-EFFG................
-....................
+..................0.
+..................k.
+..................k.
+012...............k.
+klm...............E.
+EFG.................
+dddddddddddddddddddd
 ]])
   end
-  Spawn("player", 18, 5)
-  Spawn("yield", 6.5, 10)
-  Spawn("lock", 4.5, 9.5)
-  Spawn("crystal", 1.5, 5)
+    ApplyTiles(tile_mapping, 0, 0, [[
+...I...............I
+...I...............I
+...I...............I
+...I...............I
+...I...............I
+...4556............I
+..#4556............I
+...4556............I
+...................I
+...................I
+................##.I
+...4556............I
+...4556............I
+...4556............I
+4555556...........45
+]])
+  Spawn("player", 17, 8)
+  Spawn("yield", 5.5, 10)
+  Spawn("lock", 3.5, 9.5)
+  Spawn("crystal", 1.5, 2.5)
   Spawn("box", 18.5, 13.5)
 end
 
