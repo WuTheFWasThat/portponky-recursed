@@ -21,7 +21,8 @@ KKKKKKKKKKKKKKKKKKKK
 .tuv..456..tuv..456.
 ]])
   Spawn("player", 7.5, 8)
-  Spawn("chest", 10, 8.5, "common")
+  -- Spawn("chest", 10, 8.5, "common")
+  Spawn("chest", 10, 8.5, "threadless")
   Global("cauldron", 12.5, 8.5, "rootB")
 end
 
@@ -70,6 +71,11 @@ K7...............3KK
   Spawn("crystal", 3, 2.5)
 end
 
+-- to force cauldrons
+-- idea: at end there are 2 locks and 1 key
+--
+-- idea: modify, no cauldrons, 1 green room and 1 green box, 1 normal box
+
 function threadless(is_wet)
   ApplyTiles(tile_mapping, 0, 0, [[
 VVVVVVVVVVVVVVVVVVVV
@@ -98,23 +104,22 @@ function threadless_room(is_wet)
   ApplyTiles(tile_mapping, 0, 0, [[
 VVVVVVVVVVVVVVVVVVVV
 VVVVVVVVVVVVVVVVVVVV
-VVC......BVVC....BVV
-VVC......BVVC....BVV
-VVC......BVVC....BVV
-VVC......BVVC....BVV
-VVWWWW...BVVC....BVV
-VVC......BVVC....BVV
-VVC......BVVC....BVV
-VVWWWWW..BVVC....BVV
-VVC......BVVC....BVV
-VVC......BVVC....BVV
-VVC..............BVV
-VVC..............BVV
-VVWWWWWWWWWWWWWWWWVV
+VC..........BVC...BV
+VC..........BVC...BV
+VC..........BVC...BV
+VC..........BVC...BV
+VWWWW.......BVC...BV
+VC..........BVC...BV
+VC..........BVC...BV
+VC..........BVC...BV
+VC.......WWWWVC...BV
+VC................BV
+VC................BV
+VC................BV
+VWWWWWWWWWWWWWWWWWWV
 ]])
-  Spawn("player", 4.5, 4)
-  Spawn("box", 9.25, 13.5)
-  Spawn("ruby", 15, 4)
+  Spawn("player", 3.5, 4)
+  Spawn("ruby", 16.5, 4)
 end
 
 function threadlessB(is_wet)
