@@ -1,119 +1,293 @@
--- Automatically generated file
+local fall = { ["<"]="grass_l", ["="]="grass", [">"]="grass_r",
+                 ["{"]="dirt_l", ["o"]="dirt", ["}"]="dirt_r",
+                 ["1"]="depth_ul", ["2"]="depth_u", ["3"]="depth_ur",
+                 ["4"]="depth_l", ["5"]="depth", ["6"]="depth_r",
+                 ["/"]="lantern_ul", ["\\"]="lantern_ur", ["("]="lantern_dl",
+                 [")"]="lantern_dr", ["["]="pillar_l1", ["]"]="pillar_r1",
+                 [":"]="pillar_l2", [";"]="pillar_r2" }
+local tree = { ["("]="trunk_l1", [")"]="trunk_r1", ["["]="trunk_l2", ["]"]="trunk_r2",
+               ["l"]="trunk_branch_l", ["r"]="trunk_branch_r",
+               ["-"]="branch_h", ["T"]="branch_t", ["L"]="branch_l",
+               ["!"]="root_l1", ["?"]="root_l2", ["#"]="root_r1", ["$"]="root_r2",
+               ["/"]="leaf_ul", ["^"]="leaf_u", ["\\"]="leaf_ur",
+               ["<"]="leaf_l", ["o"]="leaf_c", [">"]="leaf_r",
+               ["{"]="leaf_dl", ["_"]="leaf_d", ["}"]="leaf_dr",
+               ["*"]="leaf_deco", ["y"]="leaf_branch_lu", ["+"]="leaf_branch_d",
+               [":"]="leaf_branch_ld", [";"]="leaf_branch_rd",
+               ["q"]="leaf_corner_dl", ["p"]="leaf_corner_dr",
+               ["u"]="leaf_trunk_l", ["v"]="leaf_trunk_r",
+               ["1"]="branch_leaf1", ["2"]="branch_leaf2" }
 
-local tile_mapping = {["."]="empty", ["0"]="panel_h_l", ["1"]="panel_h_c", ["2"]="panel_h_r", ["3"]="panel_s", ["4"]="buoy_h_l", ["5"]="buoy_h_c", ["6"]="buoy_h_r", ["7"]="buoy_s", ["8"]="water", ["9"]="panel_c_b", ["a"]="panel_ul", ["b"]="panel_u", ["c"]="panel_ur", ["d"]="panel_v_u", ["e"]="buoy_ul", ["f"]="buoy_u", ["g"]="buoy_ur", ["h"]="buoy_v_u", ["i"]="water_s", ["j"]="panel_c_s1", ["k"]="panel_l", ["l"]="panel_c", ["m"]="panel_r", ["n"]="panel_v_c", ["o"]="buoy_l", ["p"]="buoy_c", ["q"]="buoy_r", ["r"]="buoy_v_c", ["s"]="acid", ["t"]="panel_c_s2", ["u"]="panel_dl", ["v"]="panel_d", ["w"]="panel_dr", ["x"]="panel_v_d", ["y"]="buoy_dl", ["z"]="buoy_d", ["A"]="buoy_dr", ["B"]="buoy_v_d", ["C"]="acid_s", ["D"]="pillar_ull", ["E"]="pillar_ul", ["F"]="pillar_u", ["G"]="pillar_ur", ["H"]="pillar_urr", ["I"]="stalactite_many", ["J"]="stalactite_big", ["K"]="stalactite_small", ["L"]="line_h", ["M"]="line_v", ["N"]="pillar_ull_w", ["O"]="pillar_l", ["P"]="pillar_c", ["Q"]="pillar_r", ["R"]="pillar_urr_w", ["S"]="railing", ["T"]="railing_broken", ["U"]="stalagmite", ["V"]="pillar_ull_a", ["W"]="water_ledge", ["X"]="ledge", ["Y"]="acidr_ledge", ["Z"]="pillar_urr_a", ["@"]="black_ledge", ["#"]="black", ["$"]="glitch_ugly", ["%"]="glitch_tunnel", ["="]="glitch_check", ["?"]="glitch_static1", ["!"]="glitch_static2", ["^"]="glitch_static3", ["&"]="glitch_static5", ["/"]="glitch_static4"}
+local water = { ["^"]="acid_s", ["w"]="acid", ["{"]="dirt_w_s",
+                ["1"]="buoy_ul", ["2"]="buoy_u", ["3"]="buoy_ur",
+                ["4"]="buoy_l", ["5"]="buoy", ["6"]="buoy_r" }
+local fall_wet = { ["<"]="grass_l_w", ["="]="grass", [">"]="grass_r_w",
+                     ["{"]="dirt_l_w", ["o"]="dirt", ["}"]="dirt_r_w",
+                     ["1"]="depth_ul", ["2"]="depth_u", ["3"]="depth_ur",
+                     ["4"]="depth_l", ["5"]="depth", ["6"]="depth_r",
+                     ["/"]="lantern_ul_w", ["\\"]="lantern_ur_w", ["("]="lantern_dl_w",
+                     [")"]="lantern_dr_w", ["["]="pillar_l1_w", ["]"]="pillar_r1_w",
+                     [":"]="pillar_l2_w", [";"]="pillar_r2_w" }
+local tree_wet = { ["("]="trunk_l1_w", [")"]="trunk_r1_w", ["["]="trunk_l2_w", ["]"]="trunk_r2_w",
+                   ["l"]="trunk_branch_l", ["r"]="trunk_branch_r",
+                   ["-"]="branch_h_w", ["T"]="branch_t_w", ["L"]="branch_l_w",
+                   ["!"]="root_l1_w", ["?"]="root_l2_w", ["#"]="root_r1_w", ["$"]="root_r2_w",
+                   ["/"]="leaf_ul_w", ["^"]="leaf_u_w", ["\\"]="leaf_ur_w",
+                   ["<"]="leaf_l_w", ["o"]="leaf_c", [">"]="leaf_r_w",
+                   ["{"]="leaf_dl_w", ["_"]="leaf_d_w", ["}"]="leaf_dr_w",
+                   ["*"]="leaf_deco", ["y"]="leaf_branch_lu_w", ["+"]="leaf_branch_d_w",
+                   [":"]="leaf_branch_ld_w", [";"]="leaf_branch_rd_w",
+                   ["q"]="leaf_corner_dl", ["p"]="leaf_corner_dr",
+                   ["u"]="leaf_trunk_l", ["v"]="leaf_trunk_r",
+                   ["1"]="branch_leaf1_w", ["2"]="branch_leaf2_w" }
 
-function start(is_wet)
-  ApplyTiles(tile_mapping, 0, 0, [[
-....................
-3...................
-bbc.................
-llm................a
-llm................k
-vvwU...............k
-bbbbbbbbbbc........k
-llllllllllm........k
-ll33lllljlm........k
-abbbclllllm........k
-kl9lmlllllm........k
-klllmlllllmSSSSSSSSk
-klllmlllabbbbbbbbbbb
-klllmlllklllllllllll
-klllmlllklllllllllll
+
+function start()
+  ApplyTiles(fall, 0, 0, [[
+>...................
+}...................
+=>..../\............
+o}....()............
+o}....[]............
+o}....:;............
+o}....[]............
+o======>............
+ooooooo}............
+222223o}............
+555556o}............
+555556o}............
+555556o}............
+555556o}...<========
+555556o}...{oooooooo
 ]])
-  Spawn("player", 5.25, 5)
-  Spawn("chest", 8.75, 5.5, "roomA")
-  Spawn("chest", 16.75, 11.5, "roomB")
+  ApplyTiles(tree, 0, 0, [[
+...........{q*op+_q*
+............{__;T-:u
+................./\[
+.................{;(
+...................l
+...................(
+...................[
+...................(
+...................[
+...................(
+...................[
+...................(
+.................!?l
+]])
+  ApplyTiles(water, 8, 12, [[
+123
+456
+456
+]])
+
+  Spawn("player", 5.5, 6)
+  Spawn("chest", 3.5, 6.5, "key")
+  Spawn("chest", 15.5, 12.5, "box")
 end
 
-function roomA(is_wet)
-  if is_wet then
-    ApplyTiles(tile_mapping, 0, 0, [[
-8888888888888oq88888
-8888888888888oq88888
-8888888888888oq88888
-8888888888888oq88888
-8888888888888oq88888
-8888888888888oq88888
-EFFGR88888888oq88888
-OPPQ888888888oq88888
-OPPQ888888888oqabbbb
-OPPQ888888888oqkllll
-OPPQ888888888oqkltll
-bbbc888888888oqkllll
-lllm888888888oqkllll
-lllmbbbbbbbbboqkllll
-lllmllllllllloqkllll
+function box(wet)
+  if wet then
+    ApplyTiles(fall_wet, 0, 0, [[
+....................
+....................
+....................
+....................
+....................
+....................
+....................
+....................
+...../\.....<=>....<
+.....().....{o=>...{
+.....[].....{oo}...{
+.....:;.....{ooo===o
+.....[].....{o122222
+============oo455555
+222222222223oo455555
+]])
+    ApplyTiles(tree_wet, 0, 0, [[
+o*p_+q*op}....{_++q*
+v_;-T:__}.......LT:u
+]..................[
+)..................(
+]..................[
+r12y^^\............(
+]..{q*>............[
+)...{_}............(
+]...................
+)...................
+]...................
+)...................
+r...................
+]])
+    ApplyTiles(water, 0, 0, [[
+..........wwww......
+.........wwwwwww....
+.wwwwwwwwwwwwwwwwww.
+.wwwwwwwwwwwwwwwwww.
+.wwwwwwwwwwwwwwwwww.
+.......wwwwwwwwwwww.
+.ww....wwwwwwwwwwww.
+.www...wwwwwwwwwwww.
+.wwww..wwwww...wwww.
+.wwww..wwwww....www.
+.wwww..wwwww....www.
+.wwww..wwwww........
+...ww..wwwww........
+....................
+....................
+]])
+    ApplyTiles(tree_wet, 1, 12, [[
+#$
 ]])
   else
-    ApplyTiles(tile_mapping, 0, 0, [[
+    ApplyTiles(fall, 0, 0, [[
 ....................
 ....................
 ....................
 ....................
 ....................
 ....................
-EFFGH...............
-OPPQ................
-OPPQ...........abbbb
-OPPQ...........kllll
-OPPQ...........kltll
-bbbc...........kllll
-lllm.........egkllll
-lllmbbbbbbbbboqkllll
-lllmllllllllloqkllll
+....................
+....................
+...../\.....<=>....<
+.....().....{o=>...{
+.....[].....{oo}...{
+.....:;.....{ooo===o
+.....[].....{o122222
+============oo455555
+222222222223oo455555
+]])
+    ApplyTiles(tree, 0, 0, [[
+o*p_+q*op}....{_++q*
+v_;-T:__}.......LT:u
+]..................[
+)..................(
+]..................[
+r12y^^\............(
+]..{q*>............[
+)...{_}............(
+]...................
+)...................
+]...................
+)...................
+r#$.................
+]])
+    ApplyTiles(water, 16, 9, [[
+^^^{
+www.
+]])
+    ApplyTiles(fall_wet, 15, 9, [[
+>....
+}...{
 ]])
   end
-  Spawn("player", 2.25, 5)
-  Spawn("yield", 7.5, 12)
-  Global("key", 17.5, 7.5)
+
+  Spawn("player", 13, 7)
+  Spawn("yield", 8.5, 12)
+  Spawn("lock", 6, 11.5)
+  Spawn("box", 5, 4.5)
+  Spawn("crystal", 2.25, 7.75)
 end
 
-function roomB(is_wet)
-  if is_wet then
-    ApplyTiles(tile_mapping, 0, 0, [[
-GR888888888888888888
-Q8888888888888888888
-Q88888888888888888NE
-Q888888888888888888O
-Q888888888888888888O
-Q011288888888888888O
-12LL388888888888888O
-Q888M888888a11c8888O
-Q888M888888nlln8888O
-Q888M888888nlln8888O
-Q8883888888u11w8888O
-Q8888888888abbbbbbbb
-Q8888888888klllaclll
-Q8888888888kll3uwlll
-bbbbbbbbbbbbbbbbclll
+function key(wet)
+  if wet then
+    ApplyTiles(fall_wet, 0, 0, [[
+>...................
+}...................
+o>..................
+o}..................
+o}..................
+o}..................
+o=====>.............
+oooooo}.............
+oooooo}.............
+22223o}.............
+55556o}.............
+55556o}...........<=
+55556o}...........{o
+55556o========>...{o
+55556ooooooooo}...{o
+]])
+    ApplyTiles(tree_wet, 10, 0, [[
+{qo**ooo**
+.{_q*p__qo
+...{_;-T:u
+.........[
+.........(
+.........[
+.........(
+.........[
+.........(
+.........[
+.........(
+]])
+    ApplyTiles(water, 0, 0, [[
+.wwwwwwwww..........
+.wwwwwwwwww.........
+..wwwwwwwwwww.......
+..wwwwwwwwwwwww123w.
+..wwwwwwwwwwwww456w.
+..wwwwwwwwwwwww456w.
+.......wwwwwwww456w.
+.......wwwwwwww456w.
+.......wwwwwwww456w.
+.......wwwwwwww456w.
+.......wwwwwwww456w.
+.......wwwwwwww456..
+.......wwwwwwww456..
+...............456..
+...............456..
 ]])
   else
-    ApplyTiles(tile_mapping, 0, 0, [[
-GH..................
-Q...................
-Q.................DE
-Q..................O
-Q..................O
-Q0112..............O
-12LL3..............O
-Q...M......a11ciiiiO
-Q...M......nlln8888O
-Q...M......nlln8888O
-Q...3......u11w8888O
-Q..........abbbbbbbb
-Q..........klllaclll
-Q..........kll3uwlll
-bbbbbbbbbbbbbbbbclll
+    ApplyTiles(fall, 0, 0, [[
+>...................
+}...................
+o>..................
+o}..................
+o}..................
+o}..................
+o=====>.............
+oooooo}.............
+oooooo}.............
+22223o}.............
+55556o}.............
+55556o}...........<=
+55556o}...........{o
+55556o========>...{o
+55556ooooooooo}...{o
+]])
+    ApplyTiles(tree, 10, 0, [[
+{qo**ooo**
+.{_q*p__qo
+...{_;-T:u
+.........[
+.........(
+.........[
+.........(
+.........[
+.........(
+.........[
+.........(
+]])
+    ApplyTiles(water, 15, 9, [[
+123
+456
+456
+456
+456
+456
 ]])
   end
-  Spawn("player", 12.5, 6)
-  Spawn("box", 3, 4.5)
-  Spawn("lock", 4.5, 12.5)
-  Spawn("yield", 9, 13)
-  Spawn("crystal", 2.5, 9)
+
+  Spawn("player", 5.5, 5)
+  Spawn("yield", 11, 12)
+  Global("key", 16.5, 8.5)
 end
 
-tiles = "tiles/glacier"
-pattern = "backgrounds/icy"
-dark = { 0, 0.18, 0.36 }
-light = { 0.24, 0.35, 0.48 }
+
+tiles = "../communityDLC_beta/tiles/fall"
+pattern = "../communityDLC_beta/backgrounds/nature"
+dark = { 0.76, 0.46, 0.24 }
+light = { 0.86, 0.57, 0.31 }
+
