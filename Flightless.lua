@@ -97,30 +97,34 @@ VVVVVVVVVVVVVVVVVVVV
   Spawn("player", 16, 11)
   Global("box", 8, 4)
   Spawn("cauldron", 12, 4, "threadlessB")
-  Spawn("chest", 4, 4, "threadless_room")
+  Spawn("chest", 10, 4, "threadless_room")
 end
 
 function threadless_room(is_wet)
   ApplyTiles(tile_mapping, 0, 0, [[
 VVVVVVVVVVVVVVVVVVVV
-VVVVVVVVVVVVVVVVVVVV
-VC..........BVC...BV
-VC..........BVC...BV
-VC..........BVC...BV
-VC..........BVC...BV
-VWWWW.......BVC...BV
-VC..........BVC...BV
-VC..........BVC...BV
-VC..........BVC...BV
-VC.......WWWWVC...BV
-VC................BV
-VC................BV
-VC................BV
+VC....BVC.........BV
+VC....BVC.........BV
+VC....BVC.........BV
+VC..WWWVVVVVVVVC..BV
+VC....BVC....BVC..BV
+VC....BVC....BVC..BV
+VC....BVC....BVC..BV
+VWWW..BVC.BC.BVC..BV
+VC....BVC.BC.BVC..BV
+VC....BVC.BC.BVC..BV
+VC....BVC.BC.BVC..BV
+VC........BC......BV
+VC........BC......BV
 VWWWWWWWWWWWWWWWWWWV
 ]])
-  Spawn("player", 3.5, 4)
-  Spawn("ruby", 16.5, 4)
+  Spawn("player", 5.5, 2)
+  Spawn("ruby", 9.5, 2.5)
+  Spawn("lock", 11.5, 2.5)
+  Spawn("lock", 13, 2.5)
+  Spawn("key", 14.5, 2)
 end
+
 
 function threadlessB(is_wet)
   ApplyTiles(tile_mapping, 0, 0, [[
@@ -143,7 +147,7 @@ VVVVVVVVVVVVVVVVVVVV
   Spawn("player", 16, 4)
   Spawn("box", 8, 4)
   Spawn("cauldron", 12, 4, "threadless")
-  Spawn("chest", 4, 4, "threadless_room")
+  Spawn("chest", 10, 4, "threadless_room")
 end
 
 

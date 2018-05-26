@@ -1,38 +1,25 @@
 bring k-room into b-room
-in water, make jar
-in water, make jar
-throw 2 jars and k-room down, make jar
-bring b room into jar
+make jar in water, throw down
+bring k room down, make jar
+bring b room in
+bring jar in b room, bring down, make jar
+bring jar in k room, bring down, make jar
+bring k room in b room in water, make jar, exit
+bring b room in new jar, get block, exit, exit
+take block into jar
+put key below, take block into jar, drop block
+go in jar, retrieve key
 
-go in k room, make jar, bring in b room, make jar <-- jar 3
-
-bring b room into k jar, go in b room, make jar
-bring jar in b room, make jar
-exit with jar
-take block out, then out, into key room, make jar
-move key left, bring block back left, make jar
-go into old k jar, move key out             <------- PROBLEMATIC B/C ACID
-
-bring b room jar into new k jar
-drop, bring block into b room jar
-
-WANT ENDING:
-
-take block into key room, move key, make jar (to exit)
-
-bring dry block room jar into key room, bring key into block room, leave there
-go in wet b room jar, retrieve block
-
-go in jar with jar
-go in existing jar, retrieve block
-jump in jar/room with block, key already there
+==== LOGIC
 
 
-Kjar-wet(
-    block
-  Bjar-dry()
-)
+want to make:
+  dry key jar
+    dry block jar
+      wet key jar
 
+then i take in block room
+retrieve a block, bring in dry key, get key, bring block in dry block, go in wet key and retrieve key
 
 =====
 OLD VERSION
