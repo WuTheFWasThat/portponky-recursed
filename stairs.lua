@@ -70,26 +70,27 @@ end
 
 function stairs()
   ApplyTiles(villa, 0, 0, [[
-|oooooo............|
-|oooooo............|
-|oooooo...ooooooooo|
-|oooooo...ooooooooo|
-|ooo......ooooooooo|
-|ooo......ooooooooo|
-|ooo...oooooooooooo|
-|ooo...oooooooooooo|
-|......oooooooooooo|
-|......oooooooooooo|
-|...ooooooooooooooo|
-|...ooooooooooooooo|
+|oooooooooooooooooo|
+|ooooooooooooo....o|
+|ooooooooooooo....o|
+|ooooooooooooo....o|
+|ooooooooo......ooo|
+|ooooooooo......ooo|
+|ooooo......o...ooo|
+|ooooo......o...ooo|
+|o......o...ooooooo|
+|o......o...ooooooo|
+|...o...ooooooooooo|
+|...o...ooooooooooo|
 |...ooooooooooooooo|
 |...ooooooooooooooo|
 oooooooooooooooooooo
 ]])
   Spawn("player", 2, 13)
-  Spawn("yield", 5, 9)
-  Spawn("yield", 8, 5)
-  Spawn("crystal", 15, 1)
+  Spawn("yield", 6, 11)
+  Spawn("yield", 10, 9)
+  Spawn("yield", 14, 7)
+  Spawn("crystal", 17, 2.5)
 end
 
 

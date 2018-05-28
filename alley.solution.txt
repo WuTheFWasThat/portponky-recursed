@@ -1,3 +1,18 @@
+goal:
+
+get cauldron above, in red thread
+
+attempt:
+b - bring cauldron in kroom, go in cauldron
+r - bring cauldron in groom, bring groom in cauldron
+b - bring kroom in cauldron
+r - take cauldron in kroom, go in cauldron
+b - take cauldron in groom, throw room up, go in cauldron
+r - exit with cauldron.  ????? go in kroom, get groom.  bring kroom in cauldron
+b - bring cauldron in kroom, go in cauldron
+r - bring cauldron in groom, go up, throw kroom up, go in cauldron
+b - exit with cauldron.  take kroom into cauldron
+r - take cauldron in kroom, switch
 
 
 PARADOX
