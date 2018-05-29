@@ -8,7 +8,6 @@ local villa = { o = "stone", t = "stonetop", ["8"] = "stucco",
                 [","] = "grass_a", [":"] = "grass_b", [";"] = "grass_c",
                 ["-"] = "ledge" }
 
-
 function start()
   ApplyTiles(villa, 0, 0, [[
 |..................|
@@ -27,71 +26,62 @@ function start()
 |..................|
 oooooooooooooooooooo
 ]])
-
+  Spawn("chest", 14, 13, "mainroom")
+  Spawn("cauldron", 12, 13, "startB")
   Spawn("player", 10, 13)
-  Spawn("chest", 12, 13, "stairs")
-  Spawn("chest", 10, 13, "fan")
-  Global("box", 8, 13)
 end
 
-function fan()
+function startB()
   ApplyTiles(villa, 0, 0, [[
-|.....o...o...o....|
-|.....o...o...o....|
-|.....o...o...o....|
 |..................|
-|...o...o...o...ooo|
-|...o...o...o...ooo|
-|...o...o...o...ooo|
-|...o...o...o...ooo|
-|...o...o...o...ooo|
-|...o...o...o...ooo|
-|...o...o...o...ooo|
-|...............ooo|
-|...............ooo|
-|...............ooo|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
+|..................|
 oooooooooooooooooooo
 ]])
-  Spawn("player", 2.5, 13)
-  Spawn("yield", 6.5, 13)
-  Spawn("yield", 10.5, 13)
-  Spawn("yield", 14.5, 13)
-  Spawn("diamond", 19, 2)
-  Global("fan", 3, 13)
-  Spawn("key", 4.5, 3.5)
-  Spawn("key", 8.5, 3.5)
-  Spawn("key", 12.5, 3.5)
-  Spawn("lock", 4.5, 12.5)
-  Spawn("lock", 8.5, 12.5)
-  Spawn("lock", 12.5, 12.5)
-  -- Spawn("lock", 16.5, 12.5)
+  Spawn("chest", 14, 13, "mainroom")
+  Spawn("cauldron", 12, 13, "start")
+  Spawn("player", 10, 13)
 end
 
 
-function stairs()
+function mainroom()
   ApplyTiles(villa, 0, 0, [[
-|oooooooooooooo....|
-|oooooooooooooo....|
-|ooooooooooo....ooo|
-|ooooooooooo....ooo|
-|oooooooo....o..ooo|
-|oooooooo....o..ooo|
-|ooooo....o..oooooo|
-|ooooo....o..oooooo|
-|oo....o..ooooooooo|
-|oo....o..ooooooooo|
-|...o..oooooooooooo|
-|...o..oooooooooooo|
-|...ooooooooooooooo|
-|...ooooooooooooooo|
+|..................|
+|..................|
+|......o....o......|
+|......o....o......|
+|......o....o......|
+|......o....o......|
+|......oooooo......|
+|...oooooooooooo...|
+|..................|
+|..................|
+|..................|
+|oooooo..oo..oooooo|
+|oooooo--..--oooooo|
+|oooooo......oooooo|
 oooooooooooooooooooo
 ]])
-  Spawn("player", 2, 13)
-  Spawn("yield", 6, 11)
-  Spawn("yield", 9, 9)
-  Spawn("yield", 12, 7)
-  Spawn("yield", 15, 5)
-  Spawn("crystal", 17.5, 1)
+
+  Spawn("crystal", 10, 4)
+  Spawn("lock", 4.5, 9.5)
+  Spawn("lock", 15.5, 9.5)
+  Spawn("key", 10, 10)
+  Spawn("player", 10, 13)
+  Spawn("chest", 12, 2, "start")
+  Global("box", 2, 9)
+  Global("box", 14, 5)
 end
 
 

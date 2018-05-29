@@ -1,18 +1,59 @@
-goal:
-
-get cauldron above, in red thread
-
-attempt:
 b - bring cauldron in kroom, go in cauldron
-r - bring cauldron in groom, bring groom in cauldron
+r - bring cauldron in groom, jump in groom, bring groom in cauldron
 b - bring kroom in cauldron
 r - take cauldron in kroom, go in cauldron
 b - take cauldron in groom, throw room up, go in cauldron
-r - exit with cauldron.  ????? go in kroom, get groom.  bring kroom in cauldron
-b - bring cauldron in kroom, go in cauldron
-r - bring cauldron in groom, go up, throw kroom up, go in cauldron
-b - exit with cauldron.  take kroom into cauldron
-r - take cauldron in kroom, switch
+r - exit with cauldron.  go in kroom, get groom, throw groom up to flowers
+    bring cauldron AND kroom down, bring cauldron in kroom, go in cauldron
+b - drop kroom at entrance, go in cauldron
+r - exit with cauldron, exit with cauldron
+    go in groom, bring kroom out, into cauldron
+b - go into cauldron
+r - bring groom into cauldron
+b - go into cauldron
+r - make jar, bring room into jar, bring cauldron in room, go in cauldron
+b - cauldron in groom, then in kroom, switch
+r - throw kroom up, switch
+b - exit with cauldron, get groom from other thread, throw up, bring kroom and
+    cauldron down, cauldron into kroom, switch
+r - put kroom at start, switch
+b - exit with cauldron, exit with cauldron
+    go in groom, retrieve kroom.  put groom in kroom
+    make jar, exit, bring room in
+    take groom out from kroom, throw right (down)
+    store kroom in other threa
+    take cauldron down (right), store non-green kroom in other thread
+    go in green groom, switch threads
+r - store non-green kroom in other thread, go in green kroom, switch threads
+b - drop green kroom at start, switch
+r - exit with cauldron, exit with cauldron
+    go in groom, retrieve green kroom, store in other thread
+    store green groom in other thread
+    go in groom!  go in green kroom, switch threads
+b - put green kroom in kroom, exit, switch threads
+r - take cauldron in green kroom, cauldron in green kroom
+    throw green kroom up, exit with cauldron
+    throw green kroom up, exit with cauldron
+    throw green kroom *RIGHT* (back down)
+    take cauldron down, take key into cauldron
+b - drop key
+    retrive green kroom from kroom
+    put green groom into green kroom, exit
+    bring non-green kroom nto cauldron
+r - take cauldron into room
+    take cauldron into groom
+    switch
+b - take green groom out of kroom
+    switch
+r - take cauldron in green groom,
+    cauldron in green kroom, switch
+b - throw kroom and groom up, switch
+r - exit with cauldron
+    throw groom up
+    throw kroom down, bring cauldron down into it
+    switch
+b - put kroom at start, switch
+r - exit with cauldron, exit with cauldron, fetch key from other thread!
 
 
 PARADOX
