@@ -1,3 +1,31 @@
+CAN COMBINE, pretty straightforward
+more or less: execute unintended solution, then intended
+
+INTENDED
+
+b - bring cauldron in kroom, go in cauldron
+r - bring cauldron in groom, jump in groom, jump in groom, bring groom in cauldron
+b - bring kroom in cauldron
+r - take cauldron in kroom, go in cauldron
+b - take cauldron in groom, throw room up, go in cauldron
+r - exit with cauldron.  go in kroom, get groom, throw groom up to flowers
+    bring cauldron AND kroom down, bring cauldron in kroom, go in cauldron
+b - drop kroom at entrance, go in cauldron
+r - exit with cauldron, exit with cauldron
+    go in groom, bring kroom out into cauldron
+    throw both kroom and groom down, go in cauldron
+b - take cauldron into k room, go in cauldron
+r - make jar
+    put g room into k room, k room at entrance, go in jar
+    go in cauldron
+b - retrieve kroom from groom
+    jump in kroom
+    jump in kroom
+    throw k room up, exit with cauldron
+    throw k room up, exit with cauldron
+    take cauldron down, key into cauldron
+
+==== UNINTENDED
 b - bring cauldron in kroom, go in cauldron
 r - bring cauldron in groom, jump in groom, bring groom in cauldron
 b - bring kroom in cauldron
@@ -21,7 +49,7 @@ b - exit with cauldron, exit with cauldron
     go in groom, retrieve kroom.  put groom in kroom
     make jar, exit, bring room in
     take groom out from kroom, throw right (down)
-    store kroom in other threa
+    store kroom in other thread
     take cauldron down (right), store non-green kroom in other thread
     go in green groom, switch threads
 r - store non-green kroom in other thread, go in green kroom, switch threads
@@ -30,7 +58,7 @@ r - exit with cauldron, exit with cauldron
     go in groom, retrieve green kroom, store in other thread
     store green groom in other thread
     go in groom!  go in green kroom, switch threads
-b - put green kroom in kroom, exit, switch threads
+b - take green kroom in cauldron
 r - take cauldron in green kroom, cauldron in green kroom
     throw green kroom up, exit with cauldron
     throw green kroom up, exit with cauldron
@@ -59,7 +87,26 @@ r - exit with cauldron, exit with cauldron, fetch key from other thread!
 PARADOX
 bring cauldron into room, into green room
 green room into cauldron, drop, go in cauldron, exit
---
+-- INTENDED
+go in cauldron
+throw room down
+bring fan in cauldron, bring room down, drop
+go in cauldron
+bring cauldron in room
+go in cauldron
+bring fan in cauldron, at left of lowest plane
+take cauldron up, drop room down, go in cauldron
+bring cauldron in room
+put green room overhung so that fan would blow it
+jump in green room with cauldron
+jump in cauldron
+take room (blown up by fan), take cauldron in room, jump in cauldron
+drop room down, go in cauldron
+exit room with cauldron
+take room into cauldron
+take cauldron into room
+retrive fan from other thread
+-- UNINTENDED
 go in cauldron
 throw room down
 bring fan in cauldron, bring room down, drop
