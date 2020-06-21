@@ -1,251 +1,187 @@
-local villa = { o = "stone", t = "stonetop", ["8"] = "stucco",
-                ["7"] = "arch_l", ["9"] = "arch_r", ["1"] = "stonebottom_l", ["3"] = "stonebottom_r",
-                ["|"] = "pillar",  ["T"] = "pillartop", ["/"] = "grasspillar",
-                [">"] = "shadowtop_l", ["}"] = "shadow_l", ["<"] = "shadowtop_r", ["{"] = "shadow_r",
-                ["x"] = "ivy_a", ["X"] = "ivy_b", ["+"] = "ivy_c",
-                ["$"] = "hang_a", ["%"] = "hang_b", ["&"] = "hang_c",
-                ["#"] = "bush_a", ["@"] = "bush_a",
-                [","] = "grass_a", [":"] = "grass_b", [";"] = "grass_c",
-                ["-"] = "ledge" }
+-- Created with RecursedEditor
 
+local tile_mapping = {["."]="empty", ["0"]="buoy_ul", ["1"]="buoy_u", ["2"]="buoy_ur", ["3"]="brick_ul", ["4"]="brick_l", ["5"]="brick_m", ["6"]="brick_r", ["7"]="brick_ur", ["8"]="pillar_ull", ["9"]="pillar_ul", ["a"]="pillar_u", ["b"]="pillar_ur", ["c"]="pillar_urr", ["d"]="ledge", ["e"]="ledge_x", ["f"]="black_l", ["g"]="black", ["h"]="black_hole", ["i"]="black_r", ["j"]="buoy_v_u", ["k"]="buoy_l", ["l"]="buoy_c", ["m"]="buoy_r", ["n"]="brick_ul_w", ["o"]="brick_dl", ["p"]="brick_dm", ["q"]="brick_dr", ["r"]="brick_ur_w", ["s"]="pillar_ull_w", ["t"]="pillar_l", ["u"]="pillar_m", ["v"]="pillar_r", ["w"]="pillar_urr_w", ["x"]="ledge_w", ["y"]="ledge_x_w", ["z"]="water_surface", ["A"]="water", ["B"]="cloud_l", ["C"]="cloud_r", ["D"]="buoy_v_c", ["E"]="buoy_dl", ["F"]="buoy_d", ["G"]="buoy_dr", ["H"]="brick_ul_a", ["I"]="line_v", ["J"]="line_h", ["K"]="brick_d", ["L"]="brick_ur_a", ["M"]="pillar_ull_a", ["N"]="crystal", ["O"]="diamond", ["P"]="ruby", ["Q"]="pillar_urr_a", ["R"]="ledge_a", ["S"]="ledge_x_a", ["T"]="acid_surface", ["U"]="acid", ["V"]="cloud", ["W"]="cloudledge", ["X"]="buoy_v_d", ["Y"]="buoy_h_l", ["Z"]="buoy_h_c", ["@"]="buoy_h_r", ["#"]="block", ["$"]="stalactite_many", ["%"]="stalactite_big", ["="]="stalactite_small", ["?"]="railing", ["!"]="railing_broken", ["^"]="stalagmite", ["&"]="glitch_tunnel", ["/"]="glitch_check", [":"]="glitch_static1", [";"]="glitch_static2", ["*"]="glitch_static3", ["+"]="glitch_static5", ["~"]="glitch_static4", ["-"]="glitch_ugly", ["_"]="crystal_hint", [","]="diamond_hint", ["("]="ruby_hint"}
 
-function start()
-  ApplyTiles(villa, 0, 0, [[
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|......oooooo......|
-|......oooooo......|
-|......oooooo......|
-oooooooooooooooooooo
+function start(is_wet)
+  ApplyTiles(tile_mapping, 0, 0, [[
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+45555555555555555556
+45555555555555555556
+45555555555555555556
+45555555555555555556
+45555555555555555556
 ]])
-
-  Spawn("crystal", 10, 3.3)
-  Spawn("player", 10, 10)
-  Global("chest", 15, 13, "block_room")
-  Spawn("record", 5, 13, "sounds/voices/w1")
-
-  -- Spawn("chest", 12, 9, "reject")
-end
-
-function block_room()
-    ApplyTiles(villa, 0, 0, [[
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|.......ooooo......|
-|...........o......|
-|...........o......|
-oooooooooooooooooooo
-]])
-
-  Global("chest", 15, 13, "key_room")
-  Spawn("chest", 5, 13, "empty_room")
-  Spawn("player", 10, 10)
-  Spawn("lock", 7.5, 12.5)
-  Spawn("box", 10, 13)
-end
-
-function key_room()
-  ApplyTiles(villa, 0, 0, [[
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-oooooooooooooooooooo
-]])
-
-  Global("chest", 13, 13, "start")
-  Spawn("player", 10, 13)
-  -- Spawn("yield", 18, 8)
-  -- Spawn("yield", 2, 5)
-  Spawn("key", 7, 13)
-end
-
-function empty_room()
-  ApplyTiles(villa, 0, 0, [[
-oooooooooooooooooooo
-oooooooooooooooooooo
-oooooooooooooooooooo
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-oooooooooooooooooooo
-oooooooooooooooooooo
-oooooooooooooooooooo
-]])
-
-  Spawn("player", 10, 10)
-end
-
-function oldreject()
-  ApplyTiles(villa, 0, 0, [[
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|.......oooo.......|
-|..................|
-|..................|
-oooooooooooooooooooo
-]])
-
-  Spawn("diamond", 10, 4)
-  Spawn("player", 5, 12)
-  Spawn("lock", 7.5, 12.5)
-  Spawn("lock", 12.5, 12.5)
-  Spawn("chest", 15, 12, "reject")
-end
-
-function reject()
-  ApplyTiles(villa, 0, 0, [[
-|oooooooooooooooooo|
-|..................|
-|..................|
-|..................|
-|..................|
-|oooooo------oooooo|
-|oooooo......oooooo|
-|oooooo......oooooo|
-|oooooo------oooooo|
-|oooooo......oooooo|
-|oooooo......oooooo|
-|oooooo------oooooo|
-|oooooo......oooooo|
-|oooooo......oooooo|
-|oooooo------oooooo|
-]])
-
-  -- Spawn("fan", 4, 4)
-  Spawn("player", 10, 12)
-  Spawn("chest", 16, 4, "reject_diamond_room")
+  Spawn("player", 10.5, 8)
+  -- Spawn("chest", 10, 8.5, "common")
+  Spawn("chest", 10, 8.5, "main")
+  Spawn("cauldron", 12.5, 8.5, "rootB")
+  Spawn("box", 15, 9)
 end
 
 
-function reject_diamond_room()
-  ApplyTiles(villa, 0, 0, [[
-|oooooooooooooooooo|
-|oooooo......oooooo|
-|oooooo......oooooo|
-|oooooo......oooooo|
-|..................|
-|..................|
-|..................|
-|.oooooooooooooooo.|
-|..................|
-|..................|
-|..................|
-|oooooo......oooooo|
-|oooooo......oooooo|
-|oooooo......oooooo|
-|oooooooooooooooooo|
+function main(is_wet)
+  ApplyTiles(tile_mapping, 0, 0, [[
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC................BV
+VC.......46.......BV
+VC.......46.......BV
+V56......46.......BV
+V56......46......45V
+V56......46......45V
+45555555555555555556
+45555555555555555556
 ]])
-
-  -- NOTE: is this even possible?
-  -- Spawn("diamond", 10, 1)
-  Spawn("diamond", 10, 2.5)
-  Spawn("player", 10, 12)
-  Spawn("lock", 5, 5.5)
-  Spawn("lock", 6.5, 5.5)
-  Spawn("lock", 13.5, 5.5)
-  Spawn("lock", 15, 5.5)
-  Global("chest", 16, 10, "reject_fan_room")
+  Spawn("ruby", 15.5, 3.5)
+  Spawn("player", 13.5, 11)
+  Spawn("lock", 18.5, 7)
+  Global("key", 2.5, 8)
+  -- Spawn("chest", 10, 8.5, "common")
+  -- Spawn("chest", 10, 8.5, "threadless")
+  -- Global("cauldron", 13.5, 8.5, "start")
+  -- Spawn("cauldron", 12.5, 8.5, "rootB")
 end
 
-function reject_fan_room()
-  ApplyTiles(villa, 0, 0, [[
-|oooooooooooooooooo|
-|.....oooooooo.....|
-|..................|
-|..................|
-|..................|
-|.....oooooooo.....|
-|.oooooooooooooooo.|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|oooooooooooooooooo|
+function rootB(is_wet)
+  ApplyTiles(tile_mapping, 0, 0, [[
+.I................I.
+.I................I.
+.I................I.
+.I................I.
+.I................I.
+.I................I.
+.I................I.
+.I................I.
+.#................#.
+55555555555555555555
+KKKKKKKKKKKKKKKKKKKK
+3KKK789abc3KKK789abc
+.456..tuv..456..tuv.
+.456..tuv..456..tuv.
+.456..tuv..456..tuv.
 ]])
-
-  Spawn("lock", 6.5, 3.5)
-  Spawn("lock", 13.5, 3.5)
-  Spawn("fan", 10, 4)
-  Spawn("player", 10, 13)
-  Global("chest", 16, 13, "reject_key_room")
+  Spawn("player", 12.5, 8)
+  Spawn("chest", 10, 8.5, "main")
+  Global("cauldron", 7.5, 8.5, "start")
 end
 
-function reject_key_room()
-  ApplyTiles(villa, 0, 0, [[
-|oooooooooooooooooo|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|.....oooooooo.....|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|..................|
-|oooooooooooooooooo|
+function common(is_wet)
+  ApplyTiles(tile_mapping, 0, 0, [[
+K7...............3KK
+6.................3K
+6..................4
+6..................4
+6..................4
+6..................4
+6..................4
+55556..............4
+55556...........^..4
+55556..........45555
+55556..........45555
+5555556........45555
+5555556........45555
+55555555555555555555
+55555555555555555555
 ]])
+  Spawn("player", 12, 12)
+  Spawn("crystal", 3, 2.5)
+end
 
-  Global("chest", 15, 12, "reject_diamond_room")
-  Spawn("player", 10, 6)
-  -- Spawn("yield", 18, 8)
-  -- Spawn("yield", 2, 5)
-  Spawn("key", 10, 12)
-  Global("fan", 5, 12)
+-- to force cauldrons
+-- idea: at end there are 2 locks and 1 key
+--
+-- idea: modify, no cauldrons, 1 green room and 1 green box, 1 normal box
+
+function threadless(is_wet)
+  ApplyTiles(tile_mapping, 0, 0, [[
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+VVC..............BVV
+VVC..............BVV
+VVC..............BVV
+VVC..............BVV
+VVVVVVVVVVVVVVC..BVV
+VVVVVVVVVVVVVVWWWWVV
+VVVVVVVVVVVVVVC..BVV
+VVVVVVVVVVVVVVC..BVV
+VVVVVVVVVVVVVVWWWWVV
+VVVVVVVVVVVVVVC..BVV
+VVVVVVVVVVVVVVC..BVV
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+]])
+  Spawn("player", 16, 11)
+  Global("box", 8, 4)
+  Spawn("cauldron", 12, 4, "threadlessB")
+  Spawn("chest", 10, 4, "threadless_room")
+end
+
+function threadless_room(is_wet)
+  ApplyTiles(tile_mapping, 0, 0, [[
+VVVVVVVVVVVVVVVVVVVV
+VC....BVC.........BV
+VC....BVC.........BV
+VC....BVC.........BV
+VC..WWWVVVVVVVVC..BV
+VC....BVC....BVC..BV
+VC....BVC....BVC..BV
+VC....BVC....BVC..BV
+VWWW..BVC.BC.BVC..BV
+VC....BVC.BC.BVC..BV
+VC....BVC.BC.BVC..BV
+VC....BVC.BC.BVC..BV
+VC........BC......BV
+VC........BC......BV
+VWWWWWWWWWWWWWWWWWWV
+]])
+  Spawn("player", 5.5, 2)
+  Spawn("ruby", 9.5, 2.5)
+  Spawn("lock", 11.5, 2.5)
+  Spawn("lock", 13, 2.5)
+  Spawn("key", 14.5, 2)
 end
 
 
-tiles = "tiles/villa"
-pattern = "backgrounds/growth"
-dark = { start = {0.14, 0.10, 0.12}, reject = {0.26, 0.19, 0.23} }
-light = { start = {0.26, 0.19, 0.23}, reject = {0.4, 0.29, 0.35} }
+function threadlessB(is_wet)
+  ApplyTiles(tile_mapping, 0, 0, [[
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+VVC..............BVV
+VVC..............BVV
+VVC..............BVV
+VVC..............BVV
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+VVVVVVVVVVVVVVVVVVVV
+]])
+  Spawn("player", 16, 4)
+  Spawn("box", 8, 4)
+  Spawn("cauldron", 12, 4, "threadless")
+  Spawn("chest", 10, 4, "threadless_room")
+end
+
+
+tiles = "../communityDLC_beta/tiles/glacier_v2"
+pattern = "../communityDLC_beta/backgrounds/frozen"
+dark = {start = {0, 0.18, 0.36}, rootB = {0.22, 0.08, 0.08}, threadless= {0.68, 0.50, 0.68}}
+light = {start = {0.24, 0.35, 0.48}, rootB = {0.44, 0.08, 0.05}, threadless = {0.9, 0.86, 0.41}}

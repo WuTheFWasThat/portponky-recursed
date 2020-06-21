@@ -8,6 +8,7 @@ go into star room, take out water room      // at this point you can make parado
 take jar into water room, leave up top
 take star room into water room, leave top
 do trick to get water room above
+  (put water room in star room, jump up, take out of other star room)
 exit with star room
 put star room in water, put water room inside it, exit
 take jar into star room, then into water room

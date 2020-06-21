@@ -1,0 +1,39 @@
+
+DIAMOND
+
+take gcauldron into groom
+jump in gcauldron
+take cauldron in room
+take groom into cauldron, drop
+exit
+
+hmm? gcauldron in room, jump in gcauldron
+
+LOGIC
+to get fan to L2, two possibilities:
+- remove fan from room
+  - fan is in room and thus not in L1.  thus room came from cauldron, so
+    cauldron was on L2 (room could come from another room but that's useless for
+    retrieving green)
+- remove fan from cauldron
+  - fan is in other cauldron and thus not in L1
+    thus cauldron came from room? but how did room get up there?
+    - need 2 rooms in root-room?
+CONSTRAINT:
+impossible to have character + something at L2 without fan at L1
+
+
+RUBY
+
+go in gcauldron
+bring cauldron in room
+put gcauldron in groom (exit)
+jump in cauldron
+
+put 2x room  into itself
+go in room
+jump in left
+jump in right
+jump in left
+jump in right
+...

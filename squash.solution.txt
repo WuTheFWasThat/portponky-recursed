@@ -21,7 +21,7 @@ make jar
 go in room, get block
 go in room, get block
 bring room out of water
-take block in, throw near yield, make jar
+take block in, throw near yield, reposition to catch, make jar
 put key in room
 bring block in room, throw left
 throw key on top of it, on left, exit

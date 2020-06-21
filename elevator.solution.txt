@@ -1,0 +1,19 @@
+jump in chest
+jump in chest
+chest in water
+go in chest, make jar
+bring chest in jar
+exit
+exit
+make jar
+block in jar
+take room down to lower area
+
+jump in chest
+chest in water
+go in chest, make jar
+bring chest in jar
+exit
+exit
+make jar
+block in jar

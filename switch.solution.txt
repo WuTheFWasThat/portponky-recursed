@@ -1,0 +1,4 @@
+EITHER:
+- in room with l1 unlocked, also unlock l2
+OR - in room with l2 unlocked, can throw other cauldron to l2
+
